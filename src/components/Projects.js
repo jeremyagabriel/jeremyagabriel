@@ -17,7 +17,7 @@ const Projects = props => {
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Battleship</h6></a>
             <p className="projectCaption">
-              Built on React and using custom CSS... sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              Built on React and using custom CSS... sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
               <div className="tags-wrapper battleship">
                 <div>
                   <span className="tag first">React</span>
@@ -37,7 +37,7 @@ const Projects = props => {
           </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Capstone Project</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>
@@ -53,7 +53,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Cat Tinder</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>
@@ -69,7 +69,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Tic Tac Toe</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">CSS</span>

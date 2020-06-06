@@ -1,70 +1,66 @@
 import React, { useState, useEffect, createRef } from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import useDocumentScrollThrottled from '../components/useDocumentScrollThrottled'
+import { CSSTransitionGroup } from 'react-transition-group'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import '../App.css';
 
 const Header = (props) => {
-  // const [shouldHideHeader, setShouldHideHeader] = useState(false)
-  // const [shouldShowShadow, setShouldShowShadow] = useState(false)
-  //
-  // const MINIMUM_SCROLL = 80
-  // const TIMEOUT_DELAY = 400
-  //
-  // useDocumentScrollThrottled(callbackData => {
-  //   const { previousScrollTop, currentScrollTop } = callbackData;
-  //   const isScrolledDown = previousScrollTop < currentScrollTop;
-  //   const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
-  //
-  //   setShouldShowShadow(currentScrollTop > 2)
-  //
-  //   setTimeout(() => {
-  //     setShouldHideHeader(isScrolledDown && isMinimumScrolled);
-  //   }, TIMEOUT_DELAY);
-  // });
-  //
-  // const shadowStyle = shouldShowShadow ? 'shadow' : ''
-  // const hiddenStyle = shouldHideHeader ? 'hidden' : ''
+  const [scrollHeader, setScrollHeader] = useState(false)
+  const [headerStyle, setHeaderStyle] = useState("")
 
-  const handleOnClickScrollContactToApp = () => {
-    props.handleOnClickScrollContact()
-  }
-  const handleOnClickScrollAboutToApp = () => {
-    props.handleOnClickScrollAbout()
-  }
-  const handleOnClickScrollProjectsToApp = () => {
-    props.handleOnClickScrollProjects()
+  const handleOnClickScrollContactToApp = () => props.handleOnClickScrollContact()
+  const handleOnClickScrollAboutToApp = () => props.handleOnClickScrollAbout()
+  const handleOnClickScrollProjectsToApp = () => props.handleOnClickScrollProjects()
+  const handleOnClickScrollTopToApp = () => props.handleOnClickScrollTop()
+
+  const transitionStyle = {
+    transitionName: "example",
+    transitionEnterTimeout: 100,
+    transitionLeaveTimeout: 100
   }
 
-   // ${shadowStyle} ${hiddenStyle}
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      if (currPos.y > prevPos.y && currPos.y < -50) {
+        setScrollHeader(true)
+        setHeaderStyle("scrolled")
+      } else if (currPos.y < prevPos.y || currPos.y >= -50) {
+        setScrollHeader(false)
+        setHeaderStyle("")
+      }
+    }
+  )
 
   return(
     <>
-      <header className="header">
-        <h1 className="app-title">Jeremy Gabriel</h1>
-        <nav className="navbar">
+      <div className="header-top-position">
+      <header className={`header ${headerStyle}`}>
+        <Link className="app-title-link" onClick={handleOnClickScrollTopToApp}><h1 className={`app-title ${headerStyle}`}>Jeremy Gabriel</h1></Link>
+        <nav className={`navbar ${headerStyle}`}>
 
-          <Link className="navLinksAbout" onClick={handleOnClickScrollAboutToApp}>About</Link>
-          <Link className="navLinks" onClick={handleOnClickScrollProjectsToApp}>Projects</Link>
-          <NavLink className="navLinks" to='/battleship'>Play</NavLink>
-          <a className="navLogoLinks" href="https://linkedin.com/in/jeremyagabriel" target="_blank" rel="noopener noreferrer">
+          <Link className={`navLinksAbout ${headerStyle}`} onClick={handleOnClickScrollAboutToApp}>About</Link>
+          <Link className={`navLinks ${headerStyle}`} onClick={handleOnClickScrollProjectsToApp}>Projects</Link>
+          <NavLink className={`navLinks ${headerStyle}`} to='/battleship'>Play</NavLink>
+          <a className={`navLogoLinks ${headerStyle}`} href="https://linkedin.com/in/jeremyagabriel" target="_blank" rel="noopener noreferrer">
             <img
               onMouseOver={props.handleMouseOverLinkedIn}
               onMouseOut={props.handleMouseOutLinkedIn}
               src={props.linkedInSrc}
               alt="LinkedInLogo"
-              className="navLogos" /></a>
-          <a className="navLogoLinks" href="https://github.com/jeremyagabriel" target="_blank" rel="noopener noreferrer">
+              className={`navLogos ${headerStyle}`} /></a>
+          <a className={`navLogoLinks ${headerStyle}`} href="https://github.com/jeremyagabriel" target="_blank" rel="noopener noreferrer">
             <img
               onMouseOver={props.handleMouseOverGitHub}
               onMouseOut={props.handleMouseOutGitHub}
               src={props.gitHubSrc}
               alt="GitHubLogo"
-              className="navLogos" /></a>
-          <div className="contactButton" onClick={handleOnClickScrollContactToApp}>
-            <Link className="contactLink">Contact</Link>
+              className={`navLogos ${headerStyle}`} /></a>
+          <div className={`contactButton ${headerStyle}`} onClick={handleOnClickScrollContactToApp}>
+            <Link className={`contactLink ${headerStyle}`}>Contact</Link>
           </div>
         </nav>
       </header>
+      </div>
     </>
   )
 }

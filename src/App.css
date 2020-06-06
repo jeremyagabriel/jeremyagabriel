@@ -13,7 +13,12 @@ body {
   justify-content: space-between;
 } */
 
-.header-scrolled {
+/* Keeps static position of header when scroll header appears */
+.header-top-position {
+  height: 6.7vw;
+}
+
+.header.scrolled {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,6 +31,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-top: 0px;
+  padding: 0 1.9vw 0 1.9vw;
 }
 
 .navbar.scrolled {
@@ -38,6 +44,10 @@ body {
   background-color: rgba(255,255,255,0.9);
 }
 
+.app-title-link {
+  text-decoration: none;
+}
+
 .app-title {
   font-family: 'Manrope', sans-serif;
   text-align: left;
@@ -45,6 +55,7 @@ body {
   font-weight: 700;
   color: black;
   margin: 1.25% 0% 1.25% 2.5%;
+  width: 34vw;
 }
 
 .app-title.scrolled {
@@ -53,8 +64,8 @@ body {
   margin: 0.58vw 0 0 0.8vw; */
   color: rgba(0,0,0,1);
   z-index: 1;
-  font-size: 16px;
-  margin: 4.64px 0 0 6.4px;
+  font-size: 20px;
+  margin: 4.5px 0 0 8px;
 }
 
 .navLinks {
@@ -71,9 +82,9 @@ body {
   margin-right: 1.27vw;
   margin-left: 1.27vw; */
   color: rgba(252,87,67,1);
-  font-size: 13.36px;
-  margin-right: 10.16px;
-  margin-left: 10.16px;
+  font-size: 16.7px;
+  margin-right: 12.7px;
+  margin-left: 12.7px;
 }
 
 .navLinksAbout {
@@ -88,8 +99,8 @@ body {
   /* font-size: 1.67vw;
   margin-right: 1.27vw; */
   color: rgba(252,87,67,1);
-  font-size: 13.36px;
-  margin-right: 10.16px;
+  font-size: 16.7px;
+  margin-right: 12.7px;
 }
 
 .navLogoLinks {
@@ -129,7 +140,6 @@ body {
   height: 4.4vw;
   width:11.9vw;
   margin-left: 1.9vw;
-  margin-right: 1.9vw;
 }
 
 .contactButton.scrolled {
@@ -138,14 +148,14 @@ body {
   margin-left: 1.27vw; */
   margin-right: 0;
   background-color: rgba(252,87,67,1);
-  height: 23.44px;
-  width:63.44px;
-  margin-left: 10.16px;
+  height: 29.3px;
+  width:79.3px;
+  margin-left: 12.7px;
 }
 
 .contactLink.scrolled {
   /* font-size: 1.67vw; */
-  font-size: 13.36px;
+  font-size: 16.7px;
 }
 
 .contactButton:hover {
@@ -166,9 +176,9 @@ body {
   /* width: 2.5vw;
   margin-left: 1.27vw;
   margin-right: 1.27vw; */
-  width: 20px;
-  margin-left: 10.16px;
-  margin-right: 10.16px;
+  width: 25px;
+  margin-left: 12.7px;
+  margin-right: 12.7px;
   /* opacity: 0.8; */
 }
 
@@ -328,6 +338,13 @@ label {
   text-decoration: none;
 }
 
+.repo-link {
+  color: black;
+  letter-spacing: 0;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .playLink {
   display: flex;
   align-items: center;
@@ -340,6 +357,10 @@ label {
   font-weight: 800;
   background-color: rgb(252,87,67);
   padding: 0.8vw;
+}
+
+.playLink:active {
+  background-color: rgb(225,64,45);
 }
 
 .tags-wrapper {
@@ -434,9 +455,9 @@ label {
   text-decoration: none;
 }
 
-/* #aboutButton:hover {
-  color: black;
-} */
+#aboutButton:active {
+  background-color: #d8d7d7;
+}
 
 .h1 {
   width: 15.63vw;
@@ -500,6 +521,10 @@ label {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+#contactEmail:active {
+  background-color: rgb(225,64,45);
 }
 
 #contactLogoContainer {
@@ -908,14 +933,25 @@ footer {
     align-items: center;
   }
   .header.scrolled {
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
   }
+  .navLinks.scrolled {display:none}
+
+  .navLinksAbout.scrolled {display:none}
+
   .app-title {
     font-size: 25.8px;
-    margin: 7.5px 0 0 0;
+    margin: 7.5px 0 5px 0;
+    text-align: center;
+    width: 204px;
   }
+
+  .navbar {
+    padding: 0 11.4px 0 11.4px;
+  }
+
   .navLinks {
     font-size: 15px;
     margin-left: 11.4px;
@@ -934,7 +970,6 @@ footer {
     height: 26.4px;
     width: 71.4px;
     margin-left: 11.4px;
-    margin-right: 11.4px;
   }
 
   .navLogos {
@@ -950,6 +985,11 @@ footer {
     letter-spacing: 1.2px;
     padding: 3.5px;
   } */
+
+  #headline {
+    margin-top: 90px;
+  }
+
   label {
     font-size: 10.8px;
     margin-top: 0.91px;
@@ -975,4 +1015,8 @@ footer {
     line-height: 16px;
   }
 
+}
+
+@media only screen and (max-width: 425px) {
+  .app-title.scrolled {width: 150px}
 }

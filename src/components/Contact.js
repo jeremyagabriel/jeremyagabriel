@@ -5,7 +5,7 @@ import '../App.css';
 
 const Contact = props => {
   const [copySuccess, setCopySuccess] = useState('Click to copy email')
-  const [textToCopy, setTextToCopy] = useState("jeremyagabriel@gmail.com")
+  const [textToCopy, setTextToCopy] = useState("jeremygabriel.develops@gmail.com")
 
   const copyToClipboard = (e) => {
     navigator.clipboard.writeText(textToCopy)

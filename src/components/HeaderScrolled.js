@@ -5,21 +5,22 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import '../App.css';
 
 const HeaderScrolled = (props) => {
-  const [showHeader, setShowHeader] = useState(false)
+  const [scrollHeader, setScrollHeader] = useState(false)
+  const [headerStyle, setHeaderStyle] = useState("")
 
   const handleSlideIn = () => {
-    setShowHeader(true)
+    setScrollHeader(true)
   }
 
   const handleSlideOut = () => {
-    setShowHeader(false)
+    setScrollHeader(false)
   }
 
   const handleOnClickScrollContactToApp = () => { props.handleOnClickScrollContact() }
   const handleOnClickScrollAboutToApp = () => { props.handleOnClickScrollAbout() }
   const handleOnClickScrollProjectsToApp = () => { props.handleOnClickScrollProjects() }
   const handleOnClickScrollTopToApp = () => { props.handleOnClickScrollTop() }
-  
+
   const transitionStyle = {
     transitionName: "example",
     transitionEnterTimeout: 100,
@@ -29,9 +30,11 @@ const HeaderScrolled = (props) => {
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (currPos.y > prevPos.y && currPos.y < -100) {
-        setShowHeader(true)
+        setScrollHeader(true)
+        setHeaderStyle("scrolled")
       } else if (currPos.y < prevPos.y || currPos.y >= -100) {
-        setShowHeader(false)
+        setScrollHeader(false)
+        setHeaderStyle("")
       }
     }
   )
@@ -39,8 +42,8 @@ const HeaderScrolled = (props) => {
   return(
     <>
       <CSSTransitionGroup {...transitionStyle}>
-        {showHeader &&
-          <header className="header-scrolled">
+        {scrollHeader &&
+          <header className="header scrolled">
           <Link onClick={handleOnClickScrollTopToApp}><h1 className="app-title scrolled">Jeremy Gabriel</h1></Link>
             <nav className="navbar scrolled">
 

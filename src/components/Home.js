@@ -62,18 +62,6 @@ const Home = props => {
 
   return(
     <>
-      <HeaderScrolled
-        handleOnClickScrollContact = {handleOnClickScrollContact}
-        handleOnClickScrollAbout = {handleOnClickScrollAbout}
-        handleOnClickScrollProjects = {handleOnClickScrollProjects}
-        handleMouseOverLinkedIn = {handleMouseOverLinkedIn}
-        handleMouseOutLinkedIn = {handleMouseOutLinkedIn}
-        handleMouseOverGitHub = {handleMouseOverGitHub}
-        handleMouseOutGitHub = {handleMouseOutGitHub}
-        handleOnClickScrollTop = {handleOnClickScrollTop}
-        linkedInSrc = {linkedInSrc}
-        gitHubSrc = {gitHubSrc}
-      />
       <div ref={scrollToTop}>
         <Header
           handleOnClickScrollContact = {handleOnClickScrollContact}
@@ -83,6 +71,7 @@ const Home = props => {
           handleMouseOutLinkedIn = {handleMouseOutLinkedIn}
           handleMouseOverGitHub = {handleMouseOverGitHub}
           handleMouseOutGitHub = {handleMouseOutGitHub}
+          handleOnClickScrollTop = {handleOnClickScrollTop}
           linkedInSrc = {linkedInSrc}
           gitHubSrc = {gitHubSrc}
         />

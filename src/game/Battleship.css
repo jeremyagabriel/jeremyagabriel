@@ -371,3 +371,9 @@
   }
 
 }
+
+@media only screen and (max-width: 389px) {
+  #subTitle {
+    font-size: 3.85vw;
+  }
+}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 // import Battleship from './components/Battleship'
 import Battleship from '../game/Battleship'
-import AboutPage from '../components/AboutPage'
 import Home from '../components/Home'
 
 const Main = () => {

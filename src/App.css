@@ -978,13 +978,21 @@ footer {
     margin-right: 11.4px;
   }
 
-  /* #contactEmail {
+  #contactEmail {
     font-size: 15px;
-    height: 22.5px;
-    width: 300px;
     letter-spacing: 1.2px;
-    padding: 3.5px;
-  } */
+    margin-left: 13.7px;
+    margin-top: 20.58px;
+    height: 22px;
+    width: 300px;
+    padding: 3.4px;
+  }
+
+  #contactTitle {
+    font-size: 42px;
+    margin-left: 13.7px;
+    width: 150px;
+  }
 
   #headline {
     margin-top: 90px;
@@ -996,10 +1004,11 @@ footer {
     letter-spacing: 0.6px;
   }
   #jeremyCartoonContainer {
-    width: 259px;
+    width: 89px;
   }
   #jeremyCartoon {
     width: 89px;
+
   }
   .projectCaption {
     letter-spacing: 0.78px;
@@ -1014,9 +1023,62 @@ footer {
     letter-spacing: 0.75px;
     line-height: 16px;
   }
+  .contactLogos {
+    height: 32.92px;
+    width: 32.92px;
+  }
+  #contactLogoContainer {
+    margin-top: 6px;
+    margin-left: 12.8px;
+  }
+  .contactLinks {
+    margin-right: 20px;
+  }
 
+  #copySuccess {
+    font-size: 9px;
+  }
+  #aboutButton {
+    font-size: 12px;
+    padding: 3px;
+    width: 89px;
+    height: 17px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  #contactEmail {
+    font-size: 3.35vw;
+    letter-spacing: 0.259vw;
+    margin-left: 1vw;
+    margin-top: 20.58px;
+    height: 5vw;
+    width: 66.5vw;
+    padding: 0.75vw;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .app-title.scrolled {width: 150px}
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {padding: 0 5px}
+  /* #contactEmail {
+    font-size: 3.35vw;
+    letter-spacing: 0.259vw;
+    margin-left: 13.7px;
+    margin-top: 20.58px;
+    height: 5vw;
+    width: 66.5vw;
+    padding: 0.75vw;
+  } */
+}
+
+@media only screen and (max-width: 374px) {
+  .navLinks {margin: 0 6px;}
+  .navLinksAbout {margin: 0 6px 0 0;}
+  .navLogos {margin: 0 6px;}
+  .contactButton {margin: 0 0 0 6px;}
 }

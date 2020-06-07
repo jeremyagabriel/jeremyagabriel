@@ -325,7 +325,7 @@ label {
 
 .projectCaption {
   /* letter-spacing: 1px; */
-  letter-spacing: 0.13vw;
+  letter-spacing: 0.1vw;
   font-size: 1.5vw;
   margin-bottom: 0px;
 }
@@ -958,6 +958,67 @@ footer {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  #projectsContainer {
+    margin-bottom: 12.51vw;
+  }
+
+  .project {
+    margin: 18px 0px;
+    width: 525.69px;
+  }
+
+  .projectTitle {
+    font-size: 26.25px;
+    margin-bottom: 8.75px;
+  }
+
+  .projectCaptionContainer {
+    padding: 17.5px;
+  }
+
+  .projectCaption {
+    letter-spacing: 0.7px;
+    font-size: 10.5px;
+  }
+
+  .projectLink {
+    height:350.48px;
+  }
+
+  .repo-link {
+    letter-spacing: 0;
+  }
+
+  .playLink {
+    width: 206.5px;
+    height: 21px;
+    font-size: 15.4px;
+    padding: 5.6px;
+  }
+
+  .tags-wrapper {
+    margin-top: 14px;
+  }
+
+
+  .tag {
+    font-size: 14px;
+    outline: 0.1vw solid #8a8a8a;
+    padding: 3.5px;
+    margin: 0px 7px;
+  }
+  .tag.first {
+    margin: 0px 7px 0px 0px;
+  }
+
+  .dogTransparent {
+    height: 28px;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .header {
     flex-direction: column;
@@ -1041,10 +1102,6 @@ footer {
     width: 89px;
 
   }
-  .projectCaption {
-    letter-spacing: 0.78px;
-    font-size: 9px;
-  }
   footer {
     font-size: 9px;
     letter-spacing: 0.5px;
@@ -1074,15 +1131,6 @@ footer {
     padding: 3px;
     width: 89px;
     height: 17px;
-  }
-  .playLink {
-    width: 177px;
-    height: 18px;
-    font-size: 13.2px;
-    padding: 4.8px;
-  }
-  .dogTransparent {
-    height: 24px;
   }
   #jeremyComputer {
   width: 40%;
@@ -1116,6 +1164,27 @@ footer {
 
 }
 
+@media only screen and (max-width: 523px) {
+  .project {
+    margin: 3.45vw 0px;
+    width: 100%;
+  }
+
+  .projectLink {
+    height: 66.94vw;
+  }
+
+  .tag {
+    font-size: 2.68vw;
+    outline: 0.1vw solid #8a8a8a;
+    padding: 0.67vw;
+    margin: 0px 1.35vw;
+  }
+  .tag.first {
+    margin: 0px 1.35vw 0px 0px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   #contactEmail {
     font-size: 3.35vw;
@@ -1143,8 +1212,21 @@ footer {
     width: 66.5vw;
     padding: 0.75vw;
   } */
-  .playLink {
+  /* .playLink {
     margin-top: 10px;
+  } */
+}
+
+@media only screen and (max-width: 385px) {
+  .playLink {
+    width: 53.5vw;
+    height: 5.3vw;
+    font-size: 4vw;
+    padding: 1.38vw;
+  }
+
+  .dogTransparent {
+    height: 7.3vw;
   }
 }
 

@@ -409,14 +409,16 @@ label {
   background-color: rgb(252,87,67);
   color: white;
   height: auto;
-  padding: 6% 5% 6% 5%;
+  padding: 6% 5% 8% 5%;
 }
 
 #aboutCopy {
-  font-size: 1.5vw;
-  width: 100%;
-  letter-spacing: 0.125vw;
-  line-height: 2.6vw;
+  font-size: 2vw;
+  line-height: 2.8vw;
+  letter-spacing: 0.08vw;
+  color: white;
+  font-weight: 600;
+  margin: 0 0 2vw 0;
 }
 
 #aboutCopyWidth {
@@ -424,7 +426,9 @@ label {
   display:flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 3vw;
+  padding: 2vw;
+  /* background-color: white; */
+  margin-left: 2vw;
 }
 
 #aboutCopyContainer {
@@ -432,6 +436,12 @@ label {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 2vw;
+}
+
+#about-button-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 #aboutTitleContainer {
@@ -447,16 +457,17 @@ label {
   text-align: center;
 }
 
-#aboutButton {
+.about-buttons {
   background-color: white;
   color: rgb(252,87,67);
   font-weight: 800;
   padding: 0.5vw;
   font-size: 2vw;
   text-decoration: none;
+  margin-right: 2vw;
 }
 
-#aboutButton:active {
+.about-buttons:active {
   background-color: #d8d7d7;
 }
 
@@ -601,7 +612,7 @@ label {
 
 #copySuccess {
   margin: 0;
-  font-size: 1.5vw;
+  font-size: 12px;
   margin-left: 4%;
   margin-top: 0.2vw;
   color: gray;
@@ -658,42 +669,9 @@ footer {
     margin-left: 15px;
     margin-right: 15px;
   }
-  /* .navbar.scrolled {
-    padding: 4px 6.4px 4px 4px;
-  }
 
-  .app-title.scrolled {
-    font-size: 16px;
-    margin: 4.64px 0 0 6.4px;
-  }
-
-  .navLinks.scrolled {
-    font-size: 13.36px;
-    margin-right: 10.16px;
-    margin-left: 10.16px;
-  }
-
-  .navLinksAbout.scrolled {
-    font-size: 13.36px;
-    margin-right: 10.16px;
-  }
-
-  .contactButton.scrolled {
-    height: 23.44px;
-    width:63.44px;
-    margin-left: 10.16px;
-  }
-
-  .contactLink.scrolled {
-    font-size: 13.36px;
-  }
-
-  .navLogos.scrolled {
-    width: 20px;
-    margin-left: 10.16px;
-    margin-right: 10.16px;
-  } */
   /* ABOUT COMPONENT */
+  /* Sets maximum dimensions for component starting @ 800px window*/
   #aboutTitle {
     font-size: 56px;
     width: 328px;
@@ -707,23 +685,32 @@ footer {
   .h1end {
     width: 152px;
   }
+
   #aboutContainer {
-    padding: 48px 40px 48px 40px;
+    padding: 48px 40px 64px 40px;
   }
 
   #aboutCopy {
-    font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.65px;
+    margin: 0 0 16px 0;
   }
 
   #aboutCopyWidth {
     width: 432px;
-    padding-left: 24px;
+    padding: 16px;
+    margin-left: 16px;
   }
-  #aboutButton {
+
+  #aboutCopyContainer {
+    margin-top: 16px;
+  }
+
+  .about-buttons {
     padding: 4px;
     font-size: 16px;
+    margin-right: 16px;
   }
 
   #headshotSpan {
@@ -1106,11 +1093,6 @@ footer {
     font-size: 9px;
     letter-spacing: 0.5px;
   }
-  #aboutCopy {
-    font-size: 9px;
-    letter-spacing: 0.75px;
-    line-height: 16px;
-  }
   .contactLogos {
     height: 32.92px;
     width: 32.92px;
@@ -1122,16 +1104,10 @@ footer {
   .contactLinks {
     margin-right: 20px;
   }
-
+/*
   #copySuccess {
     font-size: 9px;
-  }
-  #aboutButton {
-    font-size: 12px;
-    padding: 3px;
-    width: 89px;
-    height: 17px;
-  }
+  } */
   #jeremyComputer {
   width: 40%;
   margin: 5vw 5vw 0vw 5vw;
@@ -1162,6 +1138,34 @@ footer {
     font-size: 3vw;
   }
 
+  #aboutCopy {
+    font-size: 12px;
+    letter-spacing: 0.49px;
+    line-height: 16px;
+  }
+  .about-buttons {
+    padding: 3px;
+    font-size: 12px;
+    margin-right: 12px;
+  }
+  #headshotSpan {
+    width: 108px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutCopyContainer {
+    flex-direction: column;
+  }
+  #aboutCopy {
+    text-align: center;
+  }
+  #aboutCopyWidth {
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 523px) {

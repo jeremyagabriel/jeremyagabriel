@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import Contact from '../components/Contact'
 import Square from '../game/Square'
 import Messages from '../game/Messages'
-import BattleshipHeader from '../game/BattleShipHeader.js'
 import Grass from '../images/grass.jpg'
 import DogSmall from '../images/dog-s.jpg'
 import DogSmallFound from '../images/dog-s-found.jpg'
@@ -84,6 +82,8 @@ class Battleship extends Component{
 
   componentDidMount() {
     window.scrollTo(0, 0);
+    this.onHomePageHeaderToApp()
+    console.log("mainHeader? for Battleship:",this.props.mainHeader)
     let squares = Array(100).fill().map(value=>Grass)
     let { grid, shipIndexes, outterIndsOnly, twoH, twoV, threeH, threeV, fourH, fourV } = this.state
     shipIndexes = []
@@ -463,6 +463,10 @@ class Battleship extends Component{
     this.componentDidMount()
   }
 
+  onHomePageHeaderToApp = () => {
+    this.props.onHomePageHeader(false)
+  }
+
   render(){
     let squares = this.state.squares.map((value, index) => {
       return(
@@ -477,15 +481,6 @@ class Battleship extends Component{
     })
     return(
       <>
-      <BattleshipHeader
-        handleOnClickScrollContact = {this.handleOnClickScrollContact}
-        handleMouseOverLinkedIn = {this.handleMouseOverLinkedIn}
-        handleMouseOutLinkedIn = {this.handleMouseOutLinkedIn}
-        handleMouseOverGitHub = {this.handleMouseOverGitHub}
-        handleMouseOutGitHub = {this.handleMouseOutGitHub}
-        linkedInSrc = {this.state.linkedInSrc}
-        gitHubSrc = {this.state.gitHubSrc}
-      />
         <div id="body">
           <h2 id="battleshipTitle">Doggoship</h2>
           <div id="subTitleContainer">
@@ -512,16 +507,6 @@ class Battleship extends Component{
             Doggos Left To Find: <span id="hitCounter">{ this.state.hitCounter }</span></p>
             <Link id="reset" onClick = { this.reset }><span>Restart</span></Link>
           </div>
-        </div>
-        <div ref={this.scrollToContact}>
-          <Contact
-            handleMouseOverLinkedIn = {this.handleMouseOverLinkedIn}
-            handleMouseOutLinkedIn = {this.handleMouseOutLinkedIn}
-            handleMouseOverGitHub = {this.handleMouseOverGitHub}
-            handleMouseOutGitHub = {this.handleMouseOutGitHub}
-            linkedInSrc = {this.state.linkedInSrc}
-            gitHubSrc = {this.state.gitHubSrc}
-          />
         </div>
       </>
     )

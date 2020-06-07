@@ -322,12 +322,10 @@
     margin-left: 11.4px;
     margin-right: 11.4px;
   }
-  /* #battleshipTitle {
-    font-size: 6.67vw;
-    margin: 3.34vw 0px 1.67vw 0px;
-    letter-spacing: 0.33vw;
+  #battleshipTitle {
+    margin-top: 60px;
   }
-
+  /*
   #subTitleContainer {
     font-size: 2.5vw;
     padding: 1.67vw;

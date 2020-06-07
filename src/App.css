@@ -418,7 +418,7 @@ label {
   letter-spacing: 0.08vw;
   color: white;
   font-weight: 600;
-  margin: 0 0 2vw 0;
+  margin: 0 0 3vw 0;
 }
 
 #aboutCopyWidth {
@@ -464,7 +464,7 @@ label {
   padding: 0.5vw;
   font-size: 2vw;
   text-decoration: none;
-  margin-right: 2vw;
+  margin-right: 3vw;
 }
 
 .about-buttons:active {
@@ -497,6 +497,12 @@ label {
 }
 
 #headshot {width: 100%}
+
+.resume-iframe-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
 
 #jeremyComputer {
   width: 40%;
@@ -533,7 +539,7 @@ label {
   display: flex;
   flex-direction: row;
   color: black;
-  padding: 10% 5% 5% 5%;
+  padding: 12% 5% 5% 5%;
 }
 
 #contactTitle {
@@ -694,7 +700,7 @@ footer {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0.65px;
-    margin: 0 0 16px 0;
+    margin: 0 0 24px 0;
   }
 
   #aboutCopyWidth {
@@ -710,7 +716,7 @@ footer {
   .about-buttons {
     padding: 4px;
     font-size: 16px;
-    margin-right: 16px;
+    margin-right: 24px;
   }
 
   #headshotSpan {
@@ -743,7 +749,7 @@ footer {
     margin-top: 1.6px;
   }
   #contactContainer {
-    padding: 80px 40px 40px 40px;
+    padding: 96px 40px 40px 40px;
   }
   #contactAssets {
     width: 576px;
@@ -1142,11 +1148,12 @@ footer {
     font-size: 12px;
     letter-spacing: 0.49px;
     line-height: 16px;
+    margin: 0 0 18px 0;
   }
   .about-buttons {
     padding: 3px;
     font-size: 12px;
-    margin-right: 12px;
+    margin-right: 18px;
   }
   #headshotSpan {
     width: 108px;
@@ -1165,6 +1172,9 @@ footer {
     width: 100%;
     margin-left: 0px;
     align-items: center;
+  }
+  #headshot {
+    margin-top: 10px;
   }
 }
 

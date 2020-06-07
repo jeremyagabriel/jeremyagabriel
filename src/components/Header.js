@@ -37,10 +37,18 @@ const Header = (props) => {
       <header className={`header ${headerStyle}`}>
         <Link className="app-title-link" onClick={handleOnClickScrollTopToApp}><h1 className={`app-title ${headerStyle}`}>Jeremy Gabriel</h1></Link>
         <nav className={`navbar ${headerStyle}`}>
-
-          <Link className={`navLinksAbout ${headerStyle}`} onClick={handleOnClickScrollAboutToApp}>About</Link>
-          <Link className={`navLinks ${headerStyle}`} onClick={handleOnClickScrollProjectsToApp}>Projects</Link>
-          <NavLink className={`navLinks ${headerStyle}`} to='/battleship'>Play</NavLink>
+          {props.mainHeader &&
+            <Link className={`navLinksAbout ${headerStyle}`} onClick={handleOnClickScrollAboutToApp}>About</Link>
+          }
+          {props.mainHeader &&
+            <Link className={`navLinks ${headerStyle}`} onClick={handleOnClickScrollProjectsToApp}>Projects</Link>
+          }
+          {props.mainHeader &&
+            <NavLink className={`navLinks ${headerStyle}`} to='/battleship'>Play</NavLink>
+          }
+          {!props.mainHeader &&
+            <NavLink className={`navLinks ${headerStyle}`} to='/'>Home</NavLink>
+          }
           <a className={`navLogoLinks ${headerStyle}`} href="https://linkedin.com/in/jeremyagabriel" target="_blank" rel="noopener noreferrer">
             <img
               onMouseOver={props.handleMouseOverLinkedIn}

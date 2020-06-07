@@ -6,14 +6,17 @@ import { NavLink } from 'react-router-dom'
 import { Modal } from 'react-responsive-modal'
 import 'react-responsive-modal/styles.css'
 import JeremyComputer from '../images/jeremy-at-computer.png'
-import '../App.css';
+import '../App.css'
 
 const About = props => {
-  const [openModal, setOpenModal] = useState(false)
+  const [openAboutModal, setOpenAboutModal] = useState(false)
+  const [openResumeModal, setOpenResumeModal] = useState(false)
 
-  const onOpenModal = () => setOpenModal(true)
+  const onOpenAboutModal = () => setOpenAboutModal(true)
+  const onCloseAboutModal = () => setOpenAboutModal(false)
 
-  const onCloseModal = () => setOpenModal(false)
+  const onOpenResumeModal = () => setOpenResumeModal(true)
+  const onCloseResumeModal = () => setOpenResumeModal(false)
 
   // <NavLink id="aboutButton" to='/about'>More About Me</NavLink>
 
@@ -28,15 +31,17 @@ const About = props => {
         <div id="aboutCopyContainer">
           <span id="headshotSpan"><img id="headshot" alt="headshot" src = { Headshot } /></span>
           <div id="aboutCopyWidth">
-            <p id="aboutCopy">Project Manager turned Software Developer, and I'm here to stay, baby. As I live and dream code, I'm grateful to utilize what I've learned and expand upon it every day with others in this community. Let's build some awesome things together, and maybe grab some food along the way.</p>
+            <p id="aboutCopy">Project Manager turned Software Developer, and I'm here to stay, baby. As I live and dream code, I'm grateful to utilize what I've learned and expand upon it every day with others in this community. Let's build some awesome things together, and maybe eat, cry, and celebrate along the way.</p>
             <div id="about-button-wrapper">
-              <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenModal}>More About Me</div>
-              <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenModal}>View Résumé</div>
+              <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenAboutModal}>More About Me</div>
+              <NavLink className="about-buttons" to='/resume' target="_blank">
+                View Résumé
+              </NavLink>
             </div>
           </div>
         </div>
 
-        <Modal open={openModal} onClose={onCloseModal} center>
+        <Modal open={openAboutModal} onClose={onCloseAboutModal} center>
           <div id="aboutPageBody">
             <img id="jeremyComputer" src={JeremyComputer} />
             <div id="aboutPageCopy">

@@ -49,7 +49,7 @@ const About = props => {
             <img className="modal-image" src={JeremyComputer} />
             <div className="modal-copy">
               <h3 className="modal-title">A Little More About Me</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/><br/>
+              <p className="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/><br/>
               <span className="modal-subtitle"><strong>Education.</strong></span><br/><br/>
               <strong>LEARN Academy</strong><br/>
               Full Stack Software Development Bootcamp<br/>

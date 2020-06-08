@@ -516,7 +516,6 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: 1;
 }
 
 .modal-copy {
@@ -529,7 +528,6 @@ label {
   line-height: 2.4vw;
   margin: 2vw 0 2vw 0;
   height: 100%;
-  z-index: 1;
 }
 
 .modal-title {
@@ -540,6 +538,10 @@ label {
 
 .modal-subtitle {
   font-size: 3vw;
+}
+
+.modal-text {
+  z-index: 1;
 }
 
 .modal-background {
@@ -586,6 +588,7 @@ label {
   background-color: rgb(252,87,67);
   color: white;
   margin-right: 0;
+  z-index: 1;
 }
 
 .about-buttons:active {
@@ -804,7 +807,6 @@ footer {
     font-size: 12px;
     line-height: 18px;
     margin: 16px 0 16px 0;
-    z-index: 1;
   }
 
   .modal-subtitle {
@@ -879,7 +881,7 @@ footer {
   }
 
   .playLink {
-    width: 236px;
+    width: 240px;
     height: 23.8px;
     font-size: 17.6px;
     padding: 6.4px;
@@ -1227,7 +1229,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1;
   }
 
   .modal-copy {
@@ -1239,8 +1240,6 @@ footer {
     font-size: 9px;
     line-height: 14px;
     margin: 12px 0 0 0;
-    z-index: 1;
-    width:
   }
 
   .modal-title {

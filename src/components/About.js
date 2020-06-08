@@ -34,7 +34,7 @@ const About = props => {
           <div id="aboutCopyWidth">
             <p id="aboutCopy">Project Manager turned Software Developer, and I'm here to stay, baby. As I live and dream code, I'm grateful to utilize what I've learned and expand upon it every day with others in this community. Let's build some awesome things together, and maybe eat, cry, and celebrate along the way.</p>
             <div id="about-button-wrapper">
-              <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenAbout}>More About Me</div>
+              <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenAboutModal}>More About Me</div>
               <NavLink className="about-buttons" to='/resume' target="_blank">
                 View Resumé
               </NavLink>
@@ -71,7 +71,6 @@ const About = props => {
             </div>
           </div>
         </Modal>
-        <button onClick={onOpenAboutModal}>Open Modal</button>
       </div>
     </>
   )

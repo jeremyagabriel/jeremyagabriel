@@ -512,15 +512,14 @@ label {
   z-index: 1;
 }
 
-#aboutPageBody {
+.modal-body {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-self: center;
+  align-items: center;
   z-index: 1;
 }
 
-#aboutPageCopy {
+.modal-copy {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -530,6 +529,7 @@ label {
   line-height: 2.4vw;
   margin: 2vw 0 2vw 0;
   height: 100%;
+  z-index: 1;
 }
 
 .modal-title {
@@ -538,7 +538,7 @@ label {
   margin: 1vw 0 0 0;
 }
 
-.aboutPageSubtitle {
+.modal-subtitle {
   font-size: 3vw;
 }
 
@@ -786,6 +786,29 @@ footer {
 
   #headshotSpan {
     width: 144px;
+  }
+
+  .modal-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 8px 0 0 0;
+  }
+
+  .modal-image {
+    width: 266.56px;
+    margin: 40px 16px 0 40px;
+  }
+
+  .modal-copy {
+    padding-right: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 16px 0 16px 0;
+    z-index: 1;
+  }
+
+  .modal-subtitle {
+    font-size: 24px;
   }
 
   /* CONTACT COMPONENT */
@@ -1193,35 +1216,57 @@ footer {
   #copySuccess {
     font-size: 9px;
   } */
-  #jeremyComputer {
-  width: 40%;
-  margin: 5vw 5vw 0vw 5vw;
+  .modal-image {
+    width: 196.56px;
+    margin: 30px 0 0 0;
+    z-index: 1;
   }
 
-  #aboutPageBody {
+  .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;
   }
 
-  #aboutPageCopy {
+  .modal-copy {
     display: flex;
     flex-direction: column;
-    padding-right: 5vw;
-    font-size: 1.5vw;
-    line-height: 2.4vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 15px 15px;
+    font-size: 9px;
+    line-height: 14px;
+    margin: 12px 0 0 0;
+    z-index: 1;
+    width:
   }
 
-  #aboutPageTitle {
-    font-size: 5vw;
-    line-height: 5vw;
-    margin: 3vw 0 0 0;
+  .modal-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
   }
 
-  .aboutPageSubtitle {
-    font-size: 3vw;
+  .modal-subtitle {
+    font-size: 18px;
   }
+
+  .modal-window-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-window-background-half {
+    height: 33%;
+    width: 100%;
+  }
+
 
   #aboutCopy {
     font-size: 12px;

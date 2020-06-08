@@ -10,8 +10,6 @@ const Resume = props => {
     onHomePageHeaderToApp()
   })
 
-  console.log("mainHeader for Resume?:", props.mainHeader)
-
   return(
     <>
       <div className="resume-iframe-wrapper">

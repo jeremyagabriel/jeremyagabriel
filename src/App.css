@@ -507,9 +507,12 @@ label {
 }
 
 .modal-image {
-  width: 35%;
+  width: 175%;
   margin: 5vw 2vw 0vw 5vw;
   z-index: 1;
+}
+.modal-image-tag {
+  width: 100%;
 }
 
 .modal-body {
@@ -791,22 +794,27 @@ footer {
     width: 144px;
   }
 
+  .modal-image {
+    width: 274.25px;
+    margin: 40px 16px 0 40px;
+    z-index: 1;
+  }
+  .modal-image-tag {
+    width: 274.25px;
+  }
+
+  .modal-copy {
+    padding-right: 39px;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 16px 0 16px 0;
+    height: 100%;
+  }
+
   .modal-title {
     font-size: 40px;
     line-height: 40px;
     margin: 8px 0 0 0;
-  }
-
-  .modal-image {
-    width: 266.56px;
-    margin: 40px 16px 0 40px;
-  }
-
-  .modal-copy {
-    padding-right: 30px;
-    font-size: 12px;
-    line-height: 18px;
-    margin: 16px 0 16px 0;
   }
 
   .modal-subtitle {
@@ -1220,6 +1228,7 @@ footer {
   } */
   .modal-image {
     width: 196.56px;
+    /* width: 150vw; */
     margin: 30px 0 0 0;
     z-index: 1;
   }

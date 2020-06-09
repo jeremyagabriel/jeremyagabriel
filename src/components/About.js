@@ -46,7 +46,7 @@ const About = props => {
           <div className="modal-window-background-half"></div>
           </div>
           <div className="modal-body">
-            <img className="modal-image" src={JeremyComputer} />
+            <div className="modal-image"><img className="modal-image-tag" src={JeremyComputer} /></div>
             <div className="modal-copy">
               <h3 className="modal-title">A Little More About Me</h3>
               <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a recent graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. Something something something...<br/><br/>

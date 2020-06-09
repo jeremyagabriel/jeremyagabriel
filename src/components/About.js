@@ -32,7 +32,7 @@ const About = props => {
         <div id="aboutCopyContainer">
           <span id="headshotSpan"><img id="headshot" alt="headshot" src = { Headshot } /></span>
           <div id="aboutCopyWidth">
-            <p id="aboutCopy">Project Manager turned Software Developer, and I'm here to stay, baby. As I live and dream code, I'm grateful to utilize what I've learned and expand upon it every day with others in this community. Let's build some awesome things together, and maybe eat, cry, and celebrate along the way.</p>
+            <p id="aboutCopy">Project Manager turned Software Developer, and I'm here to stay, baby. As I live and dream code, I'm excited to utilize what I've learned and expand upon it every day with others in this community. Let's build some awesome things together, and maybe eat, cry, and celebrate along the way.</p>
             <div id="about-button-wrapper">
               <div className="about-buttons" style={{cursor:"pointer"}} onClick={onOpenAboutModal}>More About Me</div>
               <NavLink className="about-buttons" to='/resume' target="_blank">
@@ -49,7 +49,7 @@ const About = props => {
             <img className="modal-image" src={JeremyComputer} />
             <div className="modal-copy">
               <h3 className="modal-title">A Little More About Me</h3>
-              <p className="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/><br/>
+              <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a recent graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. Something something something...<br/><br/>
               <span className="modal-subtitle"><strong>Education.</strong></span><br/><br/>
               <strong>LEARN Academy</strong><br/>
               Full Stack Software Development Bootcamp<br/>
@@ -58,10 +58,18 @@ const About = props => {
               <strong>University of California, San Diego</strong><br/>
               Bachelors in Science, General Biology<br/>
               2011<br/><br/>
-              <span className="modal-subtitle"><strong>Extra Skillsets.</strong></span><br/><br/>
+              <span className="modal-subtitle"><strong>Technical Skillsets.</strong></span><br/><br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> HTML & CSS<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Javascript and React<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Ruby and Ruby on Rails<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> SQL<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Bootstrap<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Version Control (e.g. Git)<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Usability/Accessibility<br/><br/>
+              <span className="modal-subtitle"><strong>Non-Technical Skillsets.</strong></span><br/><br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Project Management<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> QA Testing<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> MacOS / Windows Proficiency<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Adobe Creative Suite: Photoshop, Illustrator, InDesign, Premiere<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Digital Illustration
               </p>

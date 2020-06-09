@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BattleshipPreview from '../images/battleship-preview.jpg'
 import PortfolioPreview from '../images/portfolio-image.jpg'
+import CatTinder from '../images/cat-tinder-preview.jpg'
 import BattleshipGIF from '../images/battleshipgif.gif'
 import DogTransparent from '../images/dog-transparent.png'
 import { NavLink, Link } from 'react-router-dom'
@@ -18,7 +19,7 @@ const Projects = props => {
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Battleship</h6></a>
             <p className="projectCaption">
-              Built on React and using custom CSS... sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
+              Built on React, this Battleship recreation required some big problem solving to figure out the logics of randomizing the ships, turning into one of my favorite recent projects. With the help of my illustrations and custom CSS styling, I was able to retheme it to be played directly on this site! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
               <div className="tags-wrapper battleship">
                 <div>
                   <span className="tag first">React</span>
@@ -50,11 +51,11 @@ const Projects = props => {
         </div>
         <div className="project">
         <a href="" className="projectLink" target="_blank" rel="noopener noreferrer">
-          <img className="projectImage" alt="project3" src="https://via.placeholder.com/600x400" />
+          <img className="projectImage" alt="cat-tinder-repo" src={CatTinder} />
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Cat Tinder</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore meow aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>

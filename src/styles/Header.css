@@ -235,10 +235,9 @@
 
   .app-title {
     font-size: 25.8px;
-    margin: 7.5px 0 5px 0;
+    margin: 7.5px auto 5px auto;
     text-align: center;
     width: 204px;
-    position: absolute;
   }
 
   .navbar {

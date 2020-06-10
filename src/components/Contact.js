@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import JeremyCartoon from '../images/jeremy-cartoon.png'
-// import JeremyCartoon2 from '../images/jeremy-cartoon-2.png'
 import '../styles/Contact.css';
 
 const Contact = props => {

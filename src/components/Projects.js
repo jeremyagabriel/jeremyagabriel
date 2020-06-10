@@ -71,7 +71,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/jeremyagabriel/jeremyagabriel" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">this.Portfolio</h6></a>
-            <p className="projectCaption">I challenged myself to make building my portfolio a React project in and of itself. By avoiding Bootstrap, I made it harder for myself but I ended up solidifying and expanding my understanding of vanilla CSS, UI responsiveness across platforms, and various React logic and hooks. <a className="repo-link" href="https://github.com/jeremyagabriel/jeremyagabriel" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <p className="projectCaption">I challenged myself to make building my portfolio a React project in and of itself. By avoiding Bootstrap, I made it harder for myself but I ended up solidifying and expanding my understanding of vanilla CSS, flexbox, UI responsiveness across platforms, and various React logic and hooks. <a className="repo-link" href="https://github.com/jeremyagabriel/jeremyagabriel" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">CSS</span>

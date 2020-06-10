@@ -16,14 +16,15 @@ const Home = props => {
 
   return(
     <>
-      <div id="content">
-        <Content />
+      <h4 id="headline">Full-Stack Software Developer based in San Diego.</h4>
+      <div id ="about" ref={props.refAbout}>
+        <About />
       </div>
       <div id="projects" ref={props.refProjects}>
         <Projects id="projects"/>
       </div>
-      <div id ="about" ref={props.refAbout}>
-        <About />
+      <div id="content">
+        <Content />
       </div>
     </>
   )

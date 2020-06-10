@@ -11,7 +11,6 @@ import '../styles/Content.css';
 const Content = props => {
   return(
     <>
-    <h4 id="headline">Full-Stack Software Developer based in San Diego.</h4>
       <div id="contentContainer">
         <div id="contentBody">
           {/*<img id="jeremyComputer" alt="jeremyAtComputer" src={JeremyComputer} />*/}

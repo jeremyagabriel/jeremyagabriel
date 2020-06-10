@@ -6,6 +6,19 @@ body {
   font-size: 100%;
 }
 
+#headline {
+  text-align: left;
+  font-size: 7vw;
+  line-height: 7vw;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0% 5% 1% 25%;
+}
+
 footer {
   text-align: center;
   font-size: 11px;
@@ -19,6 +32,18 @@ iframe {
   height: 135vw;
 }
 
+@media only screen and (min-width: 1000px) {
+  #headline {
+    font-size: 70px;
+    line-height: 70px;
+    width: 668px;
+    padding: 0px 33px 10px 0px;
+    margin-left: auto;
+    margin-right: 50px
+  }
+
+}
+
 @media only screen and (min-width: 800px) {
   iframe {
     width: 800px;
@@ -30,5 +55,8 @@ iframe {
   footer {
     font-size: 9px;
     letter-spacing: 0.5px;
+  }
+  #headline {
+    margin-top: 90px;
   }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect, createRef } from 'react';
 import { NavLink, Link } from 'react-router-dom'
 import { CSSTransitionGroup } from 'react-transition-group'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import '../App.css';
+import '../styles/Header.css';
 
 const Header = (props) => {
   const [scrollHeader, setScrollHeader] = useState(false)

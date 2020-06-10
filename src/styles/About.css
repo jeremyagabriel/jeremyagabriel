@@ -1,0 +1,365 @@
+/* ABOUT COMPONENT */
+#aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(252,87,67);
+  color: white;
+  height: auto;
+  padding: 6% 5% 8% 5%;
+}
+
+#aboutCopy {
+  font-size: 2vw;
+  line-height: 2.8vw;
+  letter-spacing: 0.08vw;
+  color: white;
+  font-weight: 600;
+  margin: 0 0 3vw 0;
+}
+
+#aboutCopyWidth {
+  width: 60%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2vw;
+  /* background-color: white; */
+  margin-left: 2vw;
+}
+
+#aboutCopyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+
+#about-button-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#aboutTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#aboutTitle {
+  font-size: 7vw;
+  width: 41vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-buttons {
+  background-color: white;
+  color: rgb(252,87,67);
+  font-weight: 800;
+  padding: 0.5vw;
+  font-size: 2vw;
+  text-decoration: none;
+  margin-right: 3vw;
+}
+
+.about-buttons:active {
+  background-color: #d8d7d7;
+}
+
+.h1 {
+  width: 15.63vw;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0.5vw
+}
+
+.h1end {
+  width: 19vw;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#h1Image {width: 100%;}
+
+#h1EndImage {width: 100%;}
+
+#headshotSpan {
+  width: 18vw;
+}
+
+#headshot {width: 100%}
+
+.resume-iframe-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal-image {
+  width: 246%;
+  margin: 5vw 2vw 0vw 5vw;
+  z-index: 1;
+}
+.modal-image-tag {
+  width: 100%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 5vw;
+  font-size: 1.5vw;
+  line-height: 2.4vw;
+  margin: 2vw 0 2vw 0;
+  height: 100%;
+}
+
+.modal-title {
+  font-size: 5vw;
+  line-height: 5vw;
+  margin: 1vw 0 0 0;
+  width: 40vw;
+}
+
+.modal-subtitle {
+  font-size: 3vw;
+}
+
+.modal-text {
+  z-index: 1;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+
+}
+.modal-window {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1; */
+  background-color: white;
+  margin: 5%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.modal-window-background {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-window-background-half {
+  background-color: rgb(252,87,67);
+  width: 35%;
+}
+
+.about-buttons.modal {
+  background-color: rgb(252,87,67);
+  color: white;
+  margin-right: 0;
+  z-index: 1;
+}
+
+.about-buttons:active {
+  background-color: rgb(225,64,45);
+}
+
+.customOverlay {
+
+}
+.customModal {
+  padding: 0px;
+
+}
+
+/* Sets maximum dimensions for component starting @ 800px window*/
+@media only screen and (min-width: 800px) {
+  #aboutTitle {
+    font-size: 56px;
+    width: 328px;
+  }
+
+  .h1 {
+    width: 125px;
+    margin-right: 4px;
+  }
+
+  .h1end {
+    width: 152px;
+  }
+
+  #aboutContainer {
+    padding: 48px 40px 64px 40px;
+  }
+
+  #aboutCopy {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.65px;
+    margin: 0 0 24px 0;
+  }
+
+  #aboutCopyWidth {
+    width: 432px;
+    padding: 16px;
+    margin-left: 16px;
+  }
+
+  #aboutCopyContainer {
+    margin-top: 16px;
+  }
+
+  .about-buttons {
+    padding: 4px;
+    font-size: 16px;
+    margin-right: 24px;
+  }
+
+  #headshotSpan {
+    width: 144px;
+  }
+
+  .modal-image {
+    width: 274.25px;
+    margin: 40px 16px 0 40px;
+    z-index: 1;
+  }
+  .modal-image-tag {
+    width: 274.25px;
+  }
+
+  .modal-copy {
+    padding-right: 39px;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 16px 0 16px 0;
+    height: 100%;
+  }
+
+  .modal-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 8px 0 0 0;
+    width: 300px;
+  }
+
+  .modal-subtitle {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-image {
+    width: 196.56px;
+    /* width: 150vw; */
+    margin: 30px 0 0 0;
+    z-index: 1;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 15px 15px;
+    font-size: 9px;
+    line-height: 14px;
+    margin: 12px 0 0 0;
+  }
+
+  .modal-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal-subtitle {
+    font-size: 18px;
+  }
+
+  .modal-window-background {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-window-background-half {
+    height: 25%;
+    width: 100%;
+  }
+
+
+  #aboutCopy {
+    font-size: 12px;
+    letter-spacing: 0.49px;
+    line-height: 16px;
+    margin: 0 0 18px 0;
+  }
+  .about-buttons {
+    padding: 3px;
+    font-size: 12px;
+    margin-right: 18px;
+  }
+  #headshotSpan {
+    width: 108px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutCopyContainer {
+    flex-direction: column;
+  }
+  #aboutCopy {
+    text-align: center;
+  }
+  #aboutCopyWidth {
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+  }
+  #headshot {
+    margin-top: 10px;
+  }
+}

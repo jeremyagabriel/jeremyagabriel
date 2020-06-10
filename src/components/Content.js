@@ -6,7 +6,7 @@ import ReactLogo from '../images/React-Logo.png'
 import RubyLogo from '../images/Ruby-Logo.png'
 import RubyOnRailsLogo from '../images/RubyOnRails-Logo.png'
 import SQLLogo from '../images/SQL-Logo.png'
-import '../App.css';
+import '../styles/Content.css';
 
 const Content = props => {
   return(

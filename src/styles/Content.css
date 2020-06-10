@@ -1,0 +1,146 @@
+/* CONTENT COMPONENT */
+#headline {
+  text-align: left;
+  font-size: 7vw;
+  line-height: 7vw;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0% 5% 1% 25%;
+}
+
+#contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252,87,67);
+  padding: 6% 5% 7% 5%;
+}
+
+#contentBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 70%;
+  margin: 4%;
+  margin-bottom: 0;
+}
+
+.logoWithLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+#logoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#languages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  width: 70%
+}
+
+#frameworks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.contentTitles {
+  font-size: 5vw;
+  margin: 0;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3%;
+}
+
+label {
+  font-size: 1.8vw;
+  margin-top: 0.8%;
+  color: black;
+  letter-spacing: 0.1vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  #headline {
+    font-size: 70px;
+    line-height: 70px;
+    width: 668px;
+    padding: 0px 33px 10px 0px;
+    margin-left: auto;
+    margin-right: 50px
+  }
+
+}
+
+@media only screen and (min-width: 650px) {
+  #contentContainer {
+    padding: 39px 32.5px 45.5px 32.5px;
+  }
+
+  .logo {
+    width: 86px;
+    margin: 4.9px 4.9px 0 4.9px;
+  }
+
+  .logoWithLabel {
+    width: 122.84px;
+    margin-bottom: 8.19px;
+  }
+  #languages {
+    margin-bottom: 23.4px;
+    width: 409.5px
+  }
+
+  #frameworks {
+    width: 409.5px;
+  }
+
+  .contentTitles {
+    font-size: 32.5px;
+    margin-bottom: 17.5px;
+  }
+
+  label {
+    font-size: 11.7px;
+    margin-top: 0.97px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    margin-top: 90px;
+  }
+
+  label {
+    font-size: 10.8px;
+    margin-top: 0.91px;
+    letter-spacing: 0.6px;
+  }
+}

@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react';
 import JeremyCartoon from '../images/jeremy-cartoon.png'
 // import JeremyCartoon2 from '../images/jeremy-cartoon-2.png'
-import '../App.css';
+import '../styles/Contact.css';
 
 const Contact = props => {
   const [copySuccess, setCopySuccess] = useState('Click to copy email')
-  const [textToCopy, setTextToCopy] = useState("jeremygabriel.develops@gmail.com")
+  const [textToCopy, setTextToCopy] = useState("jeremyagabriel.dev@gmail.com")
 
   const copyToClipboard = (e) => {
     navigator.clipboard.writeText(textToCopy)
@@ -23,7 +23,7 @@ const Contact = props => {
           <div id="contactCopy">
             <h3 id="contactTitle">Let's Build Together.</h3>
             <div id="email-wrapper">
-              <div id="contactEmail" onClick={copyToClipboard}>jeremygabriel.develops@gmail.com</div>
+              <div id="contactEmail" onClick={copyToClipboard}>jeremyagabriel.dev@gmail.com</div>
               <p id="copySuccess"> { copySuccess } </p>
             </div>
             <div id="contactLogoContainer">

@@ -13,7 +13,7 @@ const Resume = props => {
   return(
     <>
       <div className="resume-iframe-wrapper">
-        <iframe src="https://www.keepandshare.com/doc25/109948/2873414?da=y&ifr=y" width="900" height="700" scrolling="yes" frameborder="1"></iframe>
+        <iframe src="https://www.keepandshare.com/doc25/109965/2873414?da=y&ifr=y" scrolling="yes" frameborder="1"></iframe>
       </div>
     </>
   )

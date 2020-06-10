@@ -5,7 +5,7 @@ import CatTinder from '../images/cat-tinder-preview.jpg'
 import BattleshipGIF from '../images/battleshipgif.gif'
 import DogTransparent from '../images/dog-transparent.png'
 import { NavLink, Link } from 'react-router-dom'
-import '../App.css';
+import '../styles/Projects.css';
 
 const Projects = props => {
   return(

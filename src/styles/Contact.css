@@ -1,0 +1,189 @@
+/* CONTACT COMPONENT */
+#contactContainer {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  padding: 12% 5% 5% 5%;
+}
+
+#contactTitle {
+  color: black;
+  font-size: 7vw;
+  line-height: 100%;
+  margin-left: 4%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Manrope', sans-serif;
+  width: 50%;
+}
+
+#contactEmail {
+  font-size: 2.8vw;
+  font-weight: 600;
+  letter-spacing: 0.2vw;
+  line-height: 100%;
+  margin-left: 4%;
+  margin-top: 6%;
+  background-color: rgb(252,87,67);
+  height: 3.7vw;
+  width: 50vw;
+  padding: 0.8% 1% 1% 1%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#contactEmail:active {
+  background-color: rgb(225,64,45);
+}
+
+#contactLogoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1vw;
+  margin-left: 4%;
+}
+
+#contactAssets {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+#jeremyCartoonContainer {
+  width: 60%;
+  max-width: 150px;
+}
+
+#jeremyCartoon {
+  width: 100%;
+}
+
+.contactLinks {
+  width: 10%;
+  margin-right: 3%;
+}
+
+.contactLogos {
+  width: 100%;
+
+}
+
+#copySuccess {
+  margin: 0;
+  font-size: 12px;
+  margin-left: 4%;
+  margin-top: 0.2vw;
+  color: gray;
+}
+
+@media only screen and (min-width: 800px) {
+  #contactTitle {
+    font-size: 56px;
+    line-height: 56px;
+    margin-left: 17px;
+    width: 213px;
+  }
+  #contactLogoContainer {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-left: 18px;
+    margin-top: 8px;
+  }
+  #contactEmail {
+    font-size: 22.4px;
+    height: 31px;
+    width: 401px;
+    padding: 3.47px 4.25px 4.25px 4.25px;
+    letter-spacing: 1.6px;
+  }
+  #copySuccess {
+    font-size: 12px;
+    margin-left: 16.375px;
+    margin-top: 1.6px;
+  }
+  #contactContainer {
+    padding: 96px 40px 40px 40px;
+  }
+  #contactAssets {
+    width: 576px;
+  }
+  .contactLinks {
+    width: 42px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contactEmail {
+    font-size: 16.8px;
+    letter-spacing: 1.2px;
+    margin-left: 13.7px;
+    margin-top: 20.58px;
+    height: 22px;
+    width: 300px;
+    padding: 2.56px 3.4px 3.4px 3.4px;
+  }
+
+  #contactTitle {
+    font-size: 42px;
+    margin-left: 13.7px;
+    width: 150px;
+  }
+
+  #jeremyCartoonContainer {
+    width: 89px;
+  }
+  #jeremyCartoon {
+    width: 89px;
+
+  }
+  footer {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+  .contactLogos {
+    height: 32.92px;
+    width: 32.92px;
+  }
+  #contactLogoContainer {
+    margin-top: 6px;
+    margin-left: 12.8px;
+  }
+  .contactLinks {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutCopyContainer {
+    flex-direction: column;
+  }
+  #aboutCopy {
+    text-align: center;
+  }
+  #aboutCopyWidth {
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+  }
+  #headshot {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #contactEmail {
+    font-size: 3.6vw;
+    letter-spacing: 0.259vw;
+    margin-left: 2vw;
+    margin-top: 20.58px;
+    height: 5vw;
+    width: 65vw;
+    padding: 0.8% 0.75vw 0.75vw 0.75vw;
+  }
+}

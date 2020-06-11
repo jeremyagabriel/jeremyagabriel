@@ -52,34 +52,31 @@ const About = props => {
               <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a recent graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. I'm driven by the everyday challenges of building efficient, logical coding solutions, meanwhile creating enjoyable and intuitive user experiences through the lens of my design background.<br/><br/>
               <span className="modal-subtitle"><strong>Education.</strong></span><br/><br/>
               <strong>LEARN Academy</strong><br/>
-              Full Stack Software Development Bootcamp<br/>
-              2020
-              <br/><br/>
+              Full Stack Software Development Bootcamp | 2020<br/><br/>
               <strong>University of California, San Diego</strong><br/>
-              Bachelors in Science, General Biology<br/>
-              2011<br/><br/>
+              Bachelor of Science, General Biology | 2011<br/><br/>
               <span className="modal-subtitle"><strong>Technical Skills.</strong></span><br/><br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> HTML & CSS<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Javascript and React<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Ruby and Ruby on Rails<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> SQL<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Bootstrap<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> SQL and PostgreSQL<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Bootstrap or React<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Version Control (e.g. Git)<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Usability/Accessibility<br/><br/>
-
-              <span className="modal-subtitle"><strong>Fundamental Skills.</strong></span><br/><br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Creative Thinking (elaborate on all these...)<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Prioritization<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Motivation<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Listening<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Self Confidence<br/><br/>
 
               <span className="modal-subtitle"><strong>Non-Technical Skills.</strong></span><br/><br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Project Management<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> QA Testing<br/>
               <span style={{color:'rgb(252,87,67)'}}>■</span> Adobe Creative Suite: Photoshop, Illustrator, InDesign, Premiere<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Digital Illustration
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Digital Illustration<br/><br/>
+
+              <span className="modal-subtitle"><strong>Fundamental Skills.</strong></span><br/><br/>
+              {/*<span style={{color:'rgb(252,87,67)'}}>■</span> Creative thinking (ironically cannot think what to write here)<br/>*/}
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Prioritization through always seeing bigger picture, and making decisions to get there more effectively<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Adaptability within shifiting project scopes, notably in startup environments<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Listening and seeing teammates with all sincerity, and supporting their value<br/>
+              <span style={{color:'rgb(252,87,67)'}}>■</span> Self confident in own abilities and knows when to ask for help
               </p>
               <NavLink className="about-buttons modal" to='/resume' target="_blank">
               View Resumé

@@ -8,6 +8,7 @@ import RubyOnRailsLogo from '../images/RubyOnRails-Logo.png'
 import SQLLogo from '../images/SQL-Logo.png'
 import PhotoshopLogo from '../images/Photoshop-Logo.png'
 import IllustratorLogo from '../images/Illustrator-Logo.png'
+import DigitalIllustrationsLogo from '../images/Digital-Illustrations-Logo.png'
 import '../styles/Content.css';
 
 const Content = props => {
@@ -66,7 +67,7 @@ const Content = props => {
                   <label>Illustrator</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="DigIllustrationsLogo" src={IllustratorLogo} />
+                  <img className="logo" alt="DigIllustrationsLogo" src={DigitalIllustrationsLogo} />
                   <label>Digital Illustrations</label>
                 </div>
               </div>

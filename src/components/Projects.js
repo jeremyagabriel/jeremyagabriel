@@ -39,7 +39,7 @@ const Projects = props => {
           </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Capstone Project</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <p className="projectCaption">Work in Progress. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>
@@ -55,7 +55,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Cat Tinder</h6></a>
-            <p className="projectCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore meow aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <p className="projectCaption">Work in Progress. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore meow aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>

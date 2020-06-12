@@ -68,7 +68,7 @@ const Content = props => {
                 </div>
                 <div className="logoWithLabel">
                   <img className="logo" alt="DigIllustrationsLogo" src={DigitalIllustrationsLogo} />
-                  <label>Digital Illustrations</label>
+                  <label>Digital Illustration</label>
                 </div>
               </div>
             </div>

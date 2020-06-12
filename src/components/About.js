@@ -56,27 +56,27 @@ const About = props => {
               <strong>University of California, San Diego</strong><br/>
               Bachelor of Science, General Biology | 2011<br/><br/>
               <span className="modal-subtitle"><strong>Technical Skills.</strong></span><br/><br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> HTML & CSS<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Javascript and React<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Ruby and Ruby on Rails<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> SQL and PostgreSQL<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Bootstrap or React<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Version Control (e.g. Git)<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Usability/Accessibility<br/><br/>
+              <span className="orange">■</span> HTML & CSS<br/>
+              <span className="orange">■</span> Javascript and React<br/>
+              <span className="orange">■</span> Ruby and Ruby on Rails<br/>
+              <span className="orange">■</span> SQL and PostgreSQL<br/>
+              <span className="orange">■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
+              <span className="orange">■</span> Bootstrap or React<br/>
+              <span className="orange">■</span> Version Control (e.g. Git)<br/>
+              <span className="orange">■</span> Usability/Accessibility<br/><br/>
 
               <span className="modal-subtitle"><strong>Non-Technical Skills.</strong></span><br/><br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Project Management<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> QA Testing<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Adobe Creative Suite: Photoshop, Illustrator, InDesign, Premiere<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Digital Illustration<br/><br/>
+              <span className="orange">■</span> Project Management<br/>
+              <span className="orange">■</span> QA Testing<br/>
+              <span className="orange">■</span> Adobe Creative Suite: Photoshop, Illustrator, InDesign, Premiere<br/>
+              <span className="orange">■</span> Digital Illustration<br/><br/>
 
               <span className="modal-subtitle"><strong>Fundamental Skills.</strong></span><br/><br/>
-              {/*<span style={{color:'rgb(252,87,67)'}}>■</span> Creative thinking (ironically cannot think what to write here)<br/>*/}
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Prioritization through always seeing bigger picture, and making decisions to get there more effectively<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Adaptability within shifiting project scopes, notably in startup environments<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Listening and seeing teammates with all sincerity, and supporting their value<br/>
-              <span style={{color:'rgb(252,87,67)'}}>■</span> Self confident in own abilities and knows when to ask for help
+              {/*<span className="orange">■</span> Creative thinking (ironically cannot think what to write here)<br/>*/}
+              <span className="orange">■</span> Prioritization through always seeing bigger picture, and making decisions to get there more effectively<br/>
+              <span className="orange">■</span> Adaptability within shifting project scopes, notably in startup environments<br/>
+              <span className="orange">■</span> Listening to and seeing teammates, and supporting their value and input<br/>
+              <span className="orange">■</span> Self confident in own abilities and knows when to ask for help
               </p>
               <NavLink className="about-buttons modal" to='/resume' target="_blank">
               View Resumé

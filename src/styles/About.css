@@ -202,6 +202,10 @@
 
 }
 
+.orange {
+  color: rgb(252,87,67);
+}
+
 /* Sets maximum dimensions for component starting @ 800px window*/
 @media only screen and (min-width: 800px) {
   #aboutTitle {

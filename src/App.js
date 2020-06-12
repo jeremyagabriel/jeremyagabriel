@@ -14,6 +14,8 @@ import './App.css';
 const App = (props) => {
   const [linkedInSrc, setlinkedInSrc] = useState(LinkedInLogo)
   const [gitHubSrc, setgitHubSrc] = useState(GitHubLogo)
+  const [linkedInSrc2, setlinkedInSrc2] = useState(LinkedInLogo)
+  const [gitHubSrc2, setgitHubSrc2] = useState(GitHubLogo)
   const [mainHeader, setMainHeader] = useState(true)
   const refContact = createRef()
   const refAbout = createRef()
@@ -52,6 +54,10 @@ const App = (props) => {
   const handleMouseOutLinkedIn = () => setlinkedInSrc(LinkedInLogo)
   const handleMouseOverGitHub = () => setgitHubSrc(GitHubLogoBlack)
   const handleMouseOutGitHub = () => setgitHubSrc(GitHubLogo)
+  const handleMouseOverLinkedIn2 = () => setlinkedInSrc2(LinkedInLogoBlack)
+  const handleMouseOutLinkedIn2 = () => setlinkedInSrc2(LinkedInLogo)
+  const handleMouseOverGitHub2 = () => setgitHubSrc2(GitHubLogoBlack)
+  const handleMouseOutGitHub2 = () => setgitHubSrc2(GitHubLogo)
 
   const onHomePageHeader = (value) => {
     setMainHeader(value)
@@ -87,13 +93,13 @@ const App = (props) => {
             handleOnClickScrollContact = {handleOnClickScrollContact}
             handleOnClickScrollAbout = {handleOnClickScrollAbout}
             handleOnClickScrollProjects = {handleOnClickScrollProjects}
-            handleMouseOverLinkedIn = {handleMouseOverLinkedIn}
-            handleMouseOutLinkedIn = {handleMouseOutLinkedIn}
-            handleMouseOverGitHub = {handleMouseOverGitHub}
-            handleMouseOutGitHub = {handleMouseOutGitHub}
+            handleMouseOverLinkedIn = {handleMouseOverLinkedIn2}
+            handleMouseOutLinkedIn = {handleMouseOutLinkedIn2}
+            handleMouseOverGitHub = {handleMouseOverGitHub2}
+            handleMouseOutGitHub = {handleMouseOutGitHub2}
             handleOnClickScrollTop = {handleOnClickScrollTop}
-            linkedInSrc = {linkedInSrc}
-            gitHubSrc = {gitHubSrc}
+            linkedInSrc = {linkedInSrc2}
+            gitHubSrc = {gitHubSrc2}
           />
         </div>
         <footer>

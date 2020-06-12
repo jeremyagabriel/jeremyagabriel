@@ -2,6 +2,7 @@ import React, { useState, useEffect, createRef } from 'react';
 import { NavLink, Link } from 'react-router-dom'
 import { CSSTransitionGroup } from 'react-transition-group'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import ContactButton from '../images/contact-button-animated.png'
 import '../styles/Header.css';
 
 const Header = (props) => {
@@ -66,6 +67,11 @@ const Header = (props) => {
           <div className={`contactButton ${headerStyle}`} onClick={handleOnClickScrollContactToApp}>
             <Link className={`contactLink ${headerStyle}`}>Contact</Link>
           </div>
+          {/*<a className={`navLogoLinks ${headerStyle}`} href="https://github.com/jeremyagabriel" target="_blank" rel="noopener noreferrer">
+            <img
+              src={ContactButton}
+              alt="GitHubLogo"
+              className="contact-button-image" /></a>*/}
         </nav>
       </header>
       </div>

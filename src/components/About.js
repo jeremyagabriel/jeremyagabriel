@@ -61,8 +61,8 @@ const About = props => {
               <span className="orange">■</span> Ruby and Ruby on Rails<br/>
               <span className="orange">■</span> SQL and PostgreSQL<br/>
               <span className="orange">■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
-              <span className="orange">■</span> Bootstrap or React<br/>
               <span className="orange">■</span> Version Control (e.g. Git)<br/>
+              <span className="orange">■</span> Bootstrap and Reactstrap<br/>
               <span className="orange">■</span> Usability/Accessibility<br/><br/>
 
               <span className="modal-subtitle"><strong>Non-Technical Skills.</strong></span><br/><br/>
@@ -72,10 +72,10 @@ const About = props => {
               <span className="orange">■</span> Digital Illustration<br/><br/>
 
               <span className="modal-subtitle"><strong>Fundamental Skills.</strong></span><br/><br/>
-              {/*<span className="orange">■</span> Creative thinking (ironically cannot think what to write here)<br/>*/}
               <span className="orange">■</span> Prioritization through always seeing bigger picture, and making decisions to get there more effectively<br/>
               <span className="orange">■</span> Adaptability within shifting project scopes, notably in startup environments<br/>
               <span className="orange">■</span> Listening to and seeing teammates, and supporting their value and input<br/>
+              <span className="orange">■</span> Ability to pick up new tools and concepts easily<br/>
               <span className="orange">■</span> Self confident in own abilities and knows when to ask for help
               </p>
               <NavLink className="about-buttons modal" to='/resume' target="_blank">

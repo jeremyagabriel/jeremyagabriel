@@ -50,12 +50,12 @@ const Projects = props => {
           </div>
         </div>
         <div className="project">
-        <a href="" className="projectLink" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" className="projectLink" target="_blank" rel="noopener noreferrer">
           <img className="projectImage" alt="cat-tinder-repo" src={CatTinder} />
         </a>
           <div className="projectCaptionContainer">
-            <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Cat Tinder</h6></a>
-            <p className="projectCaption">Work in Progress. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore meow aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Meowtch Maker</h6></a>
+              <p className="projectCaption">We were tasked to create Tinder, but for cats. Challege accepted! As my first full stack application, it was a momentous feat to build a user experience with full CRUD. I intend on keeping this a work in progress to continue adding more functionality, such as messaging other cats! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>

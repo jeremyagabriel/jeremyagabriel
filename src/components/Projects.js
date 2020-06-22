@@ -3,6 +3,8 @@ import BattleshipPreview from '../images/battleship-preview.jpg'
 import PortfolioPreview from '../images/portfolio-image.jpg'
 import CatTinder from '../images/cat-tinder-preview.jpg'
 import BattleshipGIF from '../images/battleshipgif.gif'
+import CatTinderGIF from '../images/cat-tinder-gif.gif'
+import AptFinder from '../images/apt-finder-preview.jpg'
 import DogTransparent from '../images/dog-transparent.png'
 import { NavLink, Link } from 'react-router-dom'
 import '../styles/Projects.css';
@@ -35,11 +37,11 @@ const Projects = props => {
         </div>
         <div className="project">
           <a href="" className="projectLink" target="_blank" rel="noopener noreferrer">
-            <img className="projectImage" alt="project2" src="https://via.placeholder.com/600x400" />
+            <img className="projectImage" alt="project2" src={AptFinder} />
           </a>
           <div className="projectCaptionContainer">
-            <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Capstone Project</h6></a>
-            <p className="projectCaption">Work in Progress. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Mi Casa <span style={{fontWeight: "300"}}>| Apartment Finder</span></h6></a>
+            <p className="projectCaption">Full stack web application that allows users to create a profile, post a rental listing, and search and favorite other listings. Frontend is developed with React, and the backend with Ruby on Rails. Work in progress! <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>
@@ -51,10 +53,10 @@ const Projects = props => {
         </div>
         <div className="project">
         <a href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" className="projectLink" target="_blank" rel="noopener noreferrer">
-          <img className="projectImage" alt="cat-tinder-repo" src={CatTinder} />
+          <img className="projectImage" alt="cat-tinder-repo" src={CatTinderGIF} />
         </a>
           <div className="projectCaptionContainer">
-            <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Meowtch Maker</h6></a>
+            <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Meowtch Maker <span style={{fontWeight: "300"}}>| Cat Tinder</span></h6></a>
               <p className="projectCaption">We were tasked to create Tinder, but for cats. Challege accepted! As my first full stack application, it was a momentous feat to build a user experience with full CRUD. I intend on keeping this a work in progress to continue adding more functionality, such as messaging other cats! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>

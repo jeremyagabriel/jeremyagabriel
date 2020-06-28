@@ -4,7 +4,7 @@ import PortfolioPreview from '../images/portfolio-image.jpg'
 import CatTinder from '../images/cat-tinder-preview.jpg'
 import BattleshipGIF from '../images/battleshipgif.gif'
 import CatTinderGIF from '../images/cat-tinder-gif.gif'
-import AptFinder from '../images/apt-finder-preview.jpg'
+import AptFinder from '../images/micasa-preview-gif.gif'
 import DogTransparent from '../images/dog-transparent.png'
 import { NavLink, Link } from 'react-router-dom'
 import '../styles/Projects.css';
@@ -36,12 +36,12 @@ const Projects = props => {
           </div>
         </div>
         <div className="project">
-          <a href="" className="projectLink" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/learn-academy-2020-bravo/apartment-app-jeremyagabriel" className="projectLink" target="_blank" rel="noopener noreferrer">
             <img className="projectImage" alt="project2" src={AptFinder} />
           </a>
           <div className="projectCaptionContainer">
-            <a className="projectTitleLink" href="" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Mi Casa <span style={{fontWeight: "300"}}>| Apartment Finder</span></h6></a>
-            <p className="projectCaption">Full stack web application that allows users to create a profile, post a rental listing, and search and favorite other listings. Frontend is developed with React, and the backend with Ruby on Rails. Work in progress! <a className="repo-link" href="" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/apartment-app-jeremyagabriel" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Mi Casa <span style={{fontWeight: "300"}}>| Apartment Finder</span></h6></a>
+            <p className="projectCaption">Full stack, React on Rails web application that allows users to create a profile, post, edit and delete a rental listing, and favorite other listings. I had a lot of fun building a favoriting system through the database and various API calls!  <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/apartment-app-jeremyagabriel" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>

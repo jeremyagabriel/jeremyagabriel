@@ -15,13 +15,13 @@ const Projects = props => {
     <h6 id="projectsTitle">Projects.</h6>
       <div id="projectsContainer">
         <div className="project">
-          <a className="projectLink" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">
+          <a className="projectLink" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer">
             <img className="projectImage" alt="battleship-repo" src={BattleshipGIF} />
           </a>
           <div className="projectCaptionContainer">
-            <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Battleship</h6></a>
+            <a className="projectTitleLink" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Battleship</h6></a>
             <p className="projectCaption">
-              Built on React, this Battleship recreation required some big problem solving to figure out the logic of randomizing the ships, turning into one of my favorite recent projects. With the help of my illustrations and custom CSS styling, I was able to retheme it to be played directly on this site! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/battleship-jeremy-ruben-april" target="_blank" rel="noopener noreferrer">View repo</a></p>
+              Built on React, this Battleship recreation required some big problem solving to figure out the logic of randomizing the ships, turning into one of my favorite recent projects. With the help of my illustrations and custom CSS styling, I was able to retheme it to be played directly on this site! <a className="repo-link" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer">View repo</a></p>
               <div className="tags-wrapper battleship">
                 <div>
                   <span className="tag first">React</span>

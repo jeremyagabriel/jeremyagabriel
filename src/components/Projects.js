@@ -4,6 +4,7 @@ import PortfolioPreview from '../images/portfolio-image.jpg'
 import CatTinder from '../images/cat-tinder-preview.jpg'
 import BattleshipGIF from '../images/battleshipgif.gif'
 import CatTinderGIF from '../images/cat-tinder-gif.gif'
+import HappyTrailsGIF from '../images/happy-trails-preview.gif'
 import AptFinder from '../images/micasa-preview-gif.gif'
 import DogTransparent from '../images/dog-transparent.png'
 import { NavLink, Link } from 'react-router-dom'
@@ -36,8 +37,24 @@ const Projects = props => {
           </div>
         </div>
         <div className="project">
+          <a href="https://happytrailsproject.herokuapp.com/" className="projectLink" target="_blank" rel="noopener noreferrer">
+            <img className="projectImage" alt="Image of Capstone Project." src={HappyTrailsGIF} />
+          </a>
+          <div className="projectCaptionContainer">
+            <a className="projectTitleLink" href="https://happytrailsproject.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Happy Trails</h6></a>
+            <p className="projectCaption">Happy Trails is an accessibility focused trail-finding app that sets out to catalogue, archive, and disseminate information regarding accessibility of hiking trails nationwide. Along with my two teammates, Happy Trails was built with React on Rails and pulls its trail data from an external API. The app itself implements several layers of full CRUD functionality, such as favoriting, commenting, and submitting data. <a className="repo-link" href="https://happytrailsproject.herokuapp.com/" target="_blank" rel="noopener noreferrer">Open web app</a> | <a className="repo-link" href="https://github.com/Tre-Persona/CapStoneProject" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <div className="tags-wrapper">
+              <span className="tag first">React</span>
+              <span className="tag">Ruby on Rails</span>
+              <span className="tag">SQL</span>
+              <span className="tag">CSS</span>
+              <span className="tag">HTML</span>
+            </div>
+          </div>
+        </div>
+        <div className="project">
           <a href="https://github.com/learn-academy-2020-bravo/apartment-app-jeremyagabriel" className="projectLink" target="_blank" rel="noopener noreferrer">
-            <img className="projectImage" alt="project2" src={AptFinder} />
+            <img className="projectImage" alt="Image of apartment app project." src={AptFinder} />
           </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/apartment-app-jeremyagabriel" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Mi Casa <span style={{fontWeight: "300"}}>| Apartment Finder</span></h6></a>

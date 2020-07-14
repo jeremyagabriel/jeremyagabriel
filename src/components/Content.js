@@ -44,7 +44,7 @@ const Content = props => {
               </div>
             </div>
             <div id="frameworks-design-wrapper">
-              <h3 className="contentTitles">Frameworks.</h3>
+              <h3 className="contentTitles">Frameworks / Libraries.</h3>
               <div id="frameworks">
                 <div className="logoWithLabel">
                   <img className="logo" alt="ReactLogo" src={ReactLogo} />

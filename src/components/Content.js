@@ -48,7 +48,7 @@ const Content = props => {
               <div id="frameworks">
                 <div className="logoWithLabel">
                   <img className="logo" alt="ReactLogo" src={ReactLogo} />
-                  <label>React</label>
+                  <label>React & React Native</label>
                 </div>
                 <div className="logoWithLabel">
                   <img className="logo" alt="RubyOnRailsLogo" src={RubyOnRailsLogo} />

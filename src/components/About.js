@@ -57,9 +57,10 @@ const About = props => {
               Bachelor of Science, General Biology | 2011<br/><br/>
               <span className="modal-subtitle"><strong>Technical Skills.</strong></span><br/><br/>
               <span className="orange">■</span> HTML & CSS<br/>
-              <span className="orange">■</span> Javascript and React<br/>
+              <span className="orange">■</span> Javascript and React, React Native<br/>
               <span className="orange">■</span> Ruby and Ruby on Rails<br/>
               <span className="orange">■</span> SQL and PostgreSQL<br/>
+              <span className="orange">■</span> NoSQL and MongoDB<br/>
               <span className="orange">■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
               <span className="orange">■</span> Version Control (e.g. Git)<br/>
               <span className="orange">■</span> Bootstrap and Reactstrap<br/>

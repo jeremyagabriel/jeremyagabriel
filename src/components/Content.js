@@ -3,6 +3,7 @@ import HTMLLogo from '../images/HTML-Logo.png'
 import CSSLogo from '../images/CSS-Logo.png'
 import JSLogo from '../images/JS-Logo.png'
 import ReactLogo from '../images/React-Logo.png'
+import ReduxLogo from '../images/Redux-Logo.png'
 import RubyLogo from '../images/Ruby-Logo.png'
 import RubyOnRailsLogo from '../images/RubyOnRails-Logo.png'
 import SQLLogo from '../images/SQL-Logo.png'
@@ -22,23 +23,23 @@ const Content = props => {
               <h3 className="contentTitles">Languages.</h3>
               <div id="languages">
                 <div className="logoWithLabel">
-                  <img className="logo" alt="HTMLLogo" src={HTMLLogo} />
+                  <img className="logo" alt="HTML Logo" src={HTMLLogo} />
                   <label>HTML</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="CSSLogo" src={CSSLogo} />
+                  <img className="logo" alt="CSS Logo" src={CSSLogo} />
                   <label>CSS</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="JSLogo" src={JSLogo} />
+                  <img className="logo" alt="Javascript Logo" src={JSLogo} />
                   <label>JavaScript</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="RubyLogo" src={RubyLogo} />
+                  <img className="logo" alt="Ruby Logo" src={RubyLogo} />
                   <label>Ruby</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="SQLLogo" src={SQLLogo} />
+                  <img className="logo" alt="SQL Logo" src={SQLLogo} />
                   <label>SQL</label>
                 </div>
               </div>
@@ -47,27 +48,31 @@ const Content = props => {
               <h3 className="contentTitles">Frameworks / Libraries.</h3>
               <div id="frameworks">
                 <div className="logoWithLabel">
-                  <img className="logo" alt="ReactLogo" src={ReactLogo} />
-                  <label>React</label>
+                  <img className="logo" alt="React Logo" src={ReactLogo} />
+                  <label>React & React Native</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="RubyOnRailsLogo" src={RubyOnRailsLogo} />
+                  <img className="logo" alt="Ruby On Rails Logo" src={RubyOnRailsLogo} />
                   <label>Ruby On Rails</label>
+                </div>
+                <div className="logoWithLabel">
+                  <img className="logo" alt="Redux Logo" src={ReduxLogo} />
+                  <label>Redux</label>
                 </div>
               </div>
 
               <h3 className="contentTitles design">Design.</h3>
               <div id="design">
                 <div className="logoWithLabel">
-                  <img className="logo" alt="PhotoshopLogo" src={PhotoshopLogo} />
+                  <img className="logo" alt="Photoshop Logo" src={PhotoshopLogo} />
                   <label>Photoshop</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="IllustratorLogo" src={IllustratorLogo} />
+                  <img className="logo" alt="Illustrator Logo" src={IllustratorLogo} />
                   <label>Illustrator</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="DigIllustrationsLogo" src={DigitalIllustrationsLogo} />
+                  <img className="logo" alt="Digital Illustrations Logo" src={DigitalIllustrationsLogo} />
                   <label>Digital Illustration</label>
                 </div>
               </div>

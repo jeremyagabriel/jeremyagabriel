@@ -49,7 +49,7 @@ const About = props => {
             <div className="modal-image"><img className="modal-image-tag" src={JeremyComputer} /></div>
             <div className="modal-copy">
               <h3 className="modal-title">A Little More About Me</h3>
-              <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a recent graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. I'm driven by the everyday challenges of building efficient, logical coding solutions, meanwhile creating enjoyable and intuitive user experiences through the lens of my design background.<br/><br/>
+              <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. I'm driven by the everyday challenges of building efficient, logical coding solutions, meanwhile creating enjoyable and intuitive user experiences through the lens of my design background.<br/><br/>
               <span className="modal-subtitle"><strong>Education.</strong></span><br/><br/>
               <strong>LEARN Academy</strong><br/>
               Full Stack Software Development Bootcamp | 2020<br/><br/>
@@ -57,11 +57,13 @@ const About = props => {
               Bachelor of Science, General Biology | 2011<br/><br/>
               <span className="modal-subtitle"><strong>Technical Skills.</strong></span><br/><br/>
               <span className="orange">■</span> HTML & CSS<br/>
-              <span className="orange">■</span> Javascript and React<br/>
+              <span className="orange">■</span> Javascript and React, React Native<br/>
               <span className="orange">■</span> Ruby and Ruby on Rails<br/>
               <span className="orange">■</span> SQL and PostgreSQL<br/>
+              <span className="orange">■</span> NoSQL and MongoDB<br/>
               <span className="orange">■</span> Testing/Debugging (e.g. Jest, RSpec)<br/>
               <span className="orange">■</span> Version Control (e.g. Git)<br/>
+              <span className="orange">■</span> Redux<br/>
               <span className="orange">■</span> Bootstrap and Reactstrap<br/>
               <span className="orange">■</span> Usability/Accessibility<br/><br/>
 

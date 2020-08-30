@@ -78,7 +78,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2vw;
 }
 
 .tags-wrapper.battleship {
@@ -92,10 +91,7 @@
   color: #8a8a8a;
   font-weight: 800;
   padding: 0.5vw;
-  margin: 0px 1vw;
-}
-.tag.first {
-  margin: 0px 1vw 0px 0px;
+  margin: 2vw 2vw 0 0;
 }
 
 /* .playLink:hover {
@@ -154,18 +150,12 @@
   .dogTransparent {
     height: 32px;
   }
-  .tags-wrapper {
-    margin-top: 16px;
-  }
 
   .tag {
     font-size: 16px;
     outline: 1px solid #8a8a8a;
     padding: 4px;
-    margin: 0px 8px;
-  }
-  .tag.first {
-    margin: 0px 8px 0px 0px;
+    margin: 16px 16px 0 0;
   }
 }
 
@@ -292,18 +282,11 @@
     padding: 5.6px;
   }
 
-  .tags-wrapper {
-    margin-top: 14px;
-  }
-
   .tag {
     font-size: 14px;
     outline: 0.1vw solid #8a8a8a;
     padding: 3.5px;
-    margin: 0px 7px;
-  }
-  .tag.first {
-    margin: 0px 7px 0px 0px;
+    margin: 14px 14px 0 0;
   }
 
   .dogTransparent {
@@ -325,10 +308,7 @@
     font-size: 2.68vw;
     outline: 0.1vw solid #8a8a8a;
     padding: 0.67vw;
-    margin: 0px 1.35vw;
-  }
-  .tag.first {
-    margin: 0px 1.35vw 0px 0px;
+    margin: 2.7vw 2.7vw 0 0;
   }
 }
 

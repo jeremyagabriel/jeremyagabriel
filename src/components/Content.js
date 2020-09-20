@@ -10,6 +10,10 @@ import SQLLogo from '../images/SQL-Logo.png'
 import PhotoshopLogo from '../images/Photoshop-Logo.png'
 import IllustratorLogo from '../images/Illustrator-Logo.png'
 import DigitalIllustrationsLogo from '../images/Digital-Illustrations-Logo.png'
+import GraphQLLogo from '../images/Graphql-Logo.png'
+import MongoDBLogo from '../images/MongoDB-Logo.png'
+import NodejsLogo from '../images/Nodejs-Logo.png'
+import PostgresqlLogo from '../images/Postgresql-Logo.png'
 import '../styles/Content.css';
 
 const Content = props => {
@@ -43,21 +47,41 @@ const Content = props => {
                   <label>SQL</label>
                 </div>
               </div>
-            </div>
-            <div id="frameworks-design-wrapper">
-              <h3 className="contentTitles">Frameworks / Libraries.</h3>
+
+              <h3 className="contentTitles">Frontend.</h3>
               <div id="frameworks">
                 <div className="logoWithLabel">
                   <img className="logo" alt="React Logo" src={ReactLogo} />
                   <label>React & React Native</label>
                 </div>
                 <div className="logoWithLabel">
+                  <img className="logo" alt="Redux Logo" src={ReduxLogo} />
+                  <label>Redux</label>
+                </div>
+                <div className="logoWithLabel">
+                  <img className="logo" alt="GraphQL Logo" src={GraphQLLogo} />
+                  <label>GraphQL</label>
+                </div>
+              </div>
+            </div>
+            <div id="frameworks-design-wrapper">
+              <h3 className="contentTitles">Backend.</h3>
+              <div id="frameworks">
+                <div className="logoWithLabel">
                   <img className="logo" alt="Ruby On Rails Logo" src={RubyOnRailsLogo} />
                   <label>Ruby On Rails</label>
                 </div>
                 <div className="logoWithLabel">
-                  <img className="logo" alt="Redux Logo" src={ReduxLogo} />
-                  <label>Redux</label>
+                  <img className="logo" alt="Node.js Logo" src={NodejsLogo} />
+                  <label>Node.js</label>
+                </div>
+                <div className="logoWithLabel">
+                  <img className="logo" alt="MongoDB Logo" src={MongoDBLogo} />
+                  <label>MongoDB</label>
+                </div>
+                <div className="logoWithLabel">
+                  <img className="logo" alt="PostgreSQL Logo" src={PostgresqlLogo} />
+                  <label>PostgreSQL</label>
                 </div>
               </div>
 

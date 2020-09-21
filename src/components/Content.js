@@ -49,7 +49,7 @@ const Content = props => {
               </div>
 
               <h3 className="contentTitles">Frontend.</h3>
-              <div id="frameworks">
+              <div id="frontend">
                 <div className="logoWithLabel">
                   <img className="logo" alt="React Logo" src={ReactLogo} />
                   <label>React & React Native</label>
@@ -64,9 +64,9 @@ const Content = props => {
                 </div>
               </div>
             </div>
-            <div id="frameworks-design-wrapper">
+            <div id="backend-design-wrapper">
               <h3 className="contentTitles">Backend.</h3>
-              <div id="frameworks">
+              <div id="backend">
                 <div className="logoWithLabel">
                   <img className="logo" alt="Ruby On Rails Logo" src={RubyOnRailsLogo} />
                   <label>Ruby On Rails</label>

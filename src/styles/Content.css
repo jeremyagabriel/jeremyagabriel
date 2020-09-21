@@ -38,11 +38,12 @@
   justify-content: center;
 }
 
-#frameworks-design-wrapper {
+#backend-design-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 16;
 }
 
 #logoContainer {
@@ -63,13 +64,24 @@
   width: 70%
 }
 
-#frameworks {
+#frontend {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 70%;
+  margin-bottom: 4%;
+}
+
+#backend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 4%;
 }
 
 #design {
@@ -89,10 +101,6 @@
   margin-bottom: 3%;
 }
 
-.contentTitles.design {
-  margin-top: 3vw;
-}
-
 label {
   font-size: 1.8vw;
   margin-top: 0.8%;
@@ -103,9 +111,6 @@ label {
 @media only screen and (min-width: 1000px) {
   #logoContainer {
     flex-direction: row;
-  }
-  .contentTitles.design {
-    margin-top: 30px;
   }
 }
 
@@ -128,8 +133,14 @@ label {
     width: 409.5px
   }
 
-  #frameworks {
+  #frontend {
     width: 409.5px;
+    margin-bottom: 23.4px;
+  }
+
+  #backend {
+    width: 409.5px;
+    margin-bottom: 23.4px;
   }
 
   #design {
@@ -153,5 +164,11 @@ label {
     font-size: 10.8px;
     margin-top: 0.91px;
     letter-spacing: 0.6px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #frontend {
+    margin-bottom: 0;
   }
 }

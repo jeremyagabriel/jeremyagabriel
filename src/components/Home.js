@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
-import About from '../components/About'
-import Projects from '../components/Projects'
-import Content from '../components/Content'
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Content from '../components/Content';
 import '../App.css';
 
 const Home = props => {
   const onHomePageHeaderToApp = () => {
-    props.onHomePageHeader(true)
+    props.onHomePageHeader(true);
   }
 
   useEffect(() => {
-    onHomePageHeaderToApp()
-    console.log("mainHeader for Home?:", props.mainHeader)
+    onHomePageHeaderToApp();
+    console.log("mainHeader for Home?:", props.mainHeader);
   })
 
   return(
@@ -27,7 +27,7 @@ const Home = props => {
         <Content />
       </div>
     </>
-  )
+  );
 }
 
 export default Home;

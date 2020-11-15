@@ -1,25 +1,18 @@
 import React, { useState } from 'react';
-import Headshot from '../images/jeremy-headshot.png'
-import H1 from '../images/h1.png'
-import H1End from '../images/h1end.png'
-import { NavLink } from 'react-router-dom'
-import { Modal } from 'react-responsive-modal'
-import 'react-responsive-modal/styles.css'
-import JeremyComputer from '../images/jeremy-at-computer.png'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
-import '../styles/About.css'
+import { NavLink } from 'react-router-dom';
+import { Modal } from 'react-responsive-modal';
+import Headshot from '../images/jeremy-headshot.png';
+import H1 from '../images/h1.png';
+import H1End from '../images/h1end.png';
+import JeremyComputer from '../images/jeremy-at-computer.png';
+import 'react-responsive-modal/styles.css';
+import '../styles/About.css';
 
-const About = props => {
-  const [openAboutModal, setOpenAboutModal] = useState(false)
-  const [openAbout, setOpenAbout] = useState(false)
+const About = () => {
+  const [openAboutModal, setOpenAboutModal] = useState(false);
 
-  const onOpenAbout = () => setOpenAbout(true)
-  const onCloseAbout = () => setOpenAbout(false)
-
-  const onOpenAboutModal = () => setOpenAboutModal(true)
-  const onCloseAboutModal = () => setOpenAboutModal(false)
-
-  // <NavLink id="aboutButton" to='/about'>More About Me</NavLink>
+  const onOpenAboutModal = () => setOpenAboutModal(true);
+  const onCloseAboutModal = () => setOpenAboutModal(false);
 
   return(
     <>
@@ -49,7 +42,7 @@ const About = props => {
             <div className="modal-image"><img className="modal-image-tag" src={JeremyComputer} /></div>
             <div className="modal-copy">
               <h3 className="modal-title">A Little More About Me</h3>
-              <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a graduate of LEARN Academy, a full-stack web development bootcamp in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. I'm driven by the everyday challenges of building efficient, logical coding solutions, meanwhile creating enjoyable and intuitive user experiences through the lens of my design background.<br/><br/>
+              <p className="modal-text">Hi, I'm Jeremy Gabriel. Two first names, I know. I'm a full-stack web developer based in San Diego. Transitioning from several project manager roles before this, I’m finally able to take ownership of my own language skillsets that I once oversaw colleagues use in the past. I'm driven by the everyday challenges of building efficient, logical coding solutions, meanwhile creating enjoyable and intuitive user experiences through the lens of my design background.<br/><br/>
               <span className="modal-subtitle"><strong>Education.</strong></span><br/><br/>
               <strong>LEARN Academy</strong><br/>
               Full Stack Software Development Bootcamp | 2020<br/><br/>

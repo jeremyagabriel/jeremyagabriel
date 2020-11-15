@@ -1,66 +1,66 @@
 import React, { useState, useEffect, createRef } from 'react';
-import Home from './components/Home'
-import Header from './components/Header'
-import Contact from './components/Contact'
-import Battleship from './game/Battleship'
-import Resume from './components/Resume'
-import { Switch, Route } from 'react-router-dom'
-import GitHubLogo from './images/GitHub-Logo.png'
-import GitHubLogoBlack from './images/GitHub-Logo-Black.png'
-import LinkedInLogo from './images/LinkedIn-Logo.png'
-import LinkedInLogoBlack from './images/LinkedIn-Logo-Black.png'
+import Home from './components/Home';
+import Header from './components/Header';
+import Contact from './components/Contact';
+import Battleship from './game/Battleship';
+import Resume from './components/Resume';
+import { Switch, Route } from 'react-router-dom';
+import GitHubLogo from './images/GitHub-Logo.png';
+import GitHubLogoBlack from './images/GitHub-Logo-Black.png';
+import LinkedInLogo from './images/LinkedIn-Logo.png';
+import LinkedInLogoBlack from './images/LinkedIn-Logo-Black.png';
 import './App.css';
 
 const App = (props) => {
-  const [linkedInSrc, setlinkedInSrc] = useState(LinkedInLogo)
-  const [gitHubSrc, setgitHubSrc] = useState(GitHubLogo)
-  const [linkedInSrc2, setlinkedInSrc2] = useState(LinkedInLogo)
-  const [gitHubSrc2, setgitHubSrc2] = useState(GitHubLogo)
-  const [mainHeader, setMainHeader] = useState(true)
-  const refContact = createRef()
-  const refAbout = createRef()
-  const refProjects = createRef()
-  const refTop = createRef()
+  const [linkedInSrc, setlinkedInSrc] = useState(LinkedInLogo);
+  const [gitHubSrc, setgitHubSrc] = useState(GitHubLogo);
+  const [linkedInSrc2, setlinkedInSrc2] = useState(LinkedInLogo);
+  const [gitHubSrc2, setgitHubSrc2] = useState(GitHubLogo);
+  const [mainHeader, setMainHeader] = useState(true);
+  const refContact = createRef();
+  const refAbout = createRef();
+  const refProjects = createRef();
+  const refTop = createRef();
 
   const handleOnClickScrollAbout = (event) => {
     if(refAbout.current) {
       refAbout.current.scrollIntoView({
         behavior: "smooth",
         block: "start"
-      })
+      });
     }
   }
 
   const handleOnClickScrollProjects = (event) => {
     if(refProjects.current) {
       refProjects.current.scrollIntoView({ behavior: "smooth", block: "start"
-      })
+      });
     }
   }
 
   const handleOnClickScrollContact = (event) => {
     if(refContact.current) {
-      refContact.current.scrollIntoView({ behavior: "smooth", block: "start" })
+      refContact.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
   const handleOnClickScrollTop = (event) => {
     if(refTop.current) {
       refTop.current.scrollIntoView({ behavior: "smooth", block: "start"
-      })
+      });
     }
   }
-  const handleMouseOverLinkedIn = () => setlinkedInSrc(LinkedInLogoBlack)
-  const handleMouseOutLinkedIn = () => setlinkedInSrc(LinkedInLogo)
-  const handleMouseOverGitHub = () => setgitHubSrc(GitHubLogoBlack)
-  const handleMouseOutGitHub = () => setgitHubSrc(GitHubLogo)
-  const handleMouseOverLinkedIn2 = () => setlinkedInSrc2(LinkedInLogoBlack)
-  const handleMouseOutLinkedIn2 = () => setlinkedInSrc2(LinkedInLogo)
-  const handleMouseOverGitHub2 = () => setgitHubSrc2(GitHubLogoBlack)
-  const handleMouseOutGitHub2 = () => setgitHubSrc2(GitHubLogo)
+  const handleMouseOverLinkedIn = () => setlinkedInSrc(LinkedInLogoBlack);
+  const handleMouseOutLinkedIn = () => setlinkedInSrc(LinkedInLogo);
+  const handleMouseOverGitHub = () => setgitHubSrc(GitHubLogoBlack);
+  const handleMouseOutGitHub = () => setgitHubSrc(GitHubLogo);
+  const handleMouseOverLinkedIn2 = () => setlinkedInSrc2(LinkedInLogoBlack);
+  const handleMouseOutLinkedIn2 = () => setlinkedInSrc2(LinkedInLogo);
+  const handleMouseOverGitHub2 = () => setgitHubSrc2(GitHubLogoBlack);
+  const handleMouseOutGitHub2 = () => setgitHubSrc2(GitHubLogo);
 
   const onHomePageHeader = (value) => {
-    setMainHeader(value)
+    setMainHeader(value);
   }
 
   return(

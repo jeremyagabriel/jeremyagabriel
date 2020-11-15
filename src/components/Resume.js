@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
-import '../App.css'
+import React, { useEffect } from 'react';
+import '../App.css';
 
 const Resume = props => {
   const onHomePageHeaderToApp = () => {
-    props.onHomePageHeader(false)
+    props.onHomePageHeader(false);
   }
 
   useEffect(() => {
-    onHomePageHeaderToApp()
-  })
+    onHomePageHeaderToApp();
+  }, [])
 
   return(
     <>
@@ -19,4 +19,4 @@ const Resume = props => {
   )
 }
 
-export default Resume
+export default Resume;

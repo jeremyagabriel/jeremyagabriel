@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import BattleshipPreview from '../images/battleship-preview.jpg'
-import PortfolioPreview from '../images/portfolio-image.jpg'
-import CatTinder from '../images/cat-tinder-preview.jpg'
-import BattleshipGIF from '../images/battleshipgif.gif'
-import CatTinderGIF from '../images/cat-tinder-gif.gif'
-import HappyTrailsGIF from '../images/happy-trails-preview.gif'
-import AptFinder from '../images/micasa-preview-gif.gif'
-import HappyTrailsMobile from '../images/happy-trails-mobile-preview.jpg'
-import DogTransparent from '../images/dog-transparent.png'
-import { NavLink, Link } from 'react-router-dom'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import PortfolioPreview from '../images/portfolio-image.jpg';
+import BattleshipGIF from '../images/battleshipgif.gif';
+import CatTinderGIF from '../images/cat-tinder-gif.gif';
+import HappyTrailsGIF from '../images/happy-trails-preview.gif';
+import AptFinder from '../images/micasa-preview-gif.gif';
+import HappyTrailsMobile from '../images/happy-trails-mobile-preview.jpg';
+import DogTransparent from '../images/dog-transparent.png';
 import '../styles/Projects.css';
 
-const Projects = props => {
+const Projects = () => {
   return(
     <>
     <h6 id="projectsTitle">Projects.</h6>
@@ -23,18 +21,19 @@ const Projects = props => {
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Battleship</h6></a>
             <p className="projectCaption">
-              Built on React, this Battleship recreation required some big problem solving to figure out the logic of randomizing the ships, turning into one of my favorite recent projects. With the help of my illustrations and custom CSS styling, I was able to retheme it to be played directly on this site! <a className="repo-link" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer">View repo</a></p>
-              <div className="tags-wrapper battleship">
-                <div>
-                  <span className="tag first">React</span>
-                  <span className="tag">CSS</span>
-                  <span className="tag">HTML</span>
-                </div>
-                <NavLink className="playLink" to='/battleship' target="_blank">
-                  Click to Play Doggoship
-                  <img className="dogTransparent" src={DogTransparent} />
-                </NavLink>
+              Built on React, this Battleship recreation required some big problem solving to figure out the logic of randomizing the ships, turning into one of my favorite first projects. With the help of my illustrations and custom CSS styling, I was able to retheme it to be played directly on this site! <a className="repo-link" href="https://github.com/jeremyagabriel/jeremyagabriel/tree/master/src/game" target="_blank" rel="noopener noreferrer">View repo</a>
+            </p>
+            <div className="tags-wrapper battleship" style={{marginTop: 10}}>
+              <div>
+                <span className="tag first">React</span>
+                <span className="tag">CSS</span>
+                <span className="tag">HTML</span>
               </div>
+              <NavLink className="playLink" to='/battleship' target="_blank">
+                Click to Play Doggoship
+                <img className="dogTransparent" src={DogTransparent} />
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="project">
@@ -75,7 +74,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Meowtch Maker <span style={{fontWeight: "300"}}>| Cat Tinder</span></h6></a>
-              <p className="projectCaption">We were tasked to create Tinder, but for cats. Challege accepted! As my first full stack application, it was a momentous feat to build a user experience with full CRUD. I intend on keeping this a work in progress to continue adding more functionality, such as messaging other cats! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer">View repo</a></p>
+              <p className="projectCaption">We were tasked to create Tinder, but for cats. As my first full stack application, it was a momentous feat to build a user experience with full CRUD. I intend on keeping this a work in progress to continue adding more functionality, such as messaging other cats! <a className="repo-link" href="https://github.com/learn-academy-2020-bravo/cat-tinder-fe-jeremy-ara/tree/master/cat-tinder-frontend" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React</span>
               <span className="tag">Ruby on Rails</span>
@@ -105,7 +104,7 @@ const Projects = props => {
         </a>
           <div className="projectCaptionContainer">
             <a className="projectTitleLink" href="https://github.com/jeremyagabriel/happytrails-react-native-redux" target="_blank" rel="noopener noreferrer"><h6 className="projectTitle">Happy Trails Mobile</h6></a>
-            <p className="projectCaption">Porting my Happy Trails web app into mobile is a work in progress! Built in React Native, this project will also utilize Node.js, Express, and MongoDB. State management is built with Redux. <a className="repo-link" href="https://github.com/jeremyagabriel/happytrails-react-native-redux" target="_blank" rel="noopener noreferrer">View repo</a></p>
+            <p className="projectCaption">Happy Trails mobile is a work in progress! Built with React Native, Node.js, Express, and a MongoDB server. State management is built with Redux. <a className="repo-link" href="https://github.com/jeremyagabriel/happytrails-react-native-redux" target="_blank" rel="noopener noreferrer">View repo</a></p>
             <div className="tags-wrapper">
               <span className="tag first">React Native</span>
               <span className="tag">Redux</span>

@@ -1,24 +1,23 @@
-import React, { Component } from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import Square from '../game/Square'
-import Messages from '../game/Messages'
-import Grass from '../images/grass.jpg'
-import DogSmall from '../images/dog-s.jpg'
-import DogSmallFound from '../images/dog-s-found.jpg'
-import DogSmallGray from '../images/dog-s-gray.jpg'
-import DogMed from '../images/dog-m.jpg'
-import DogMedFound from '../images/dog-m-found.jpg'
-import DogMedGray from '../images/dog-m-gray.jpg'
-import DogLarge from '../images/dog-l.jpg'
-import DogLargeFound from '../images/dog-l-found.jpg'
-import DogLargeGray from '../images/dog-l-gray.jpg'
-import Dog from '../images/dog.jpg'
-import Treat from '../images/treat.jpg'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Square from '../game/Square';
+import Messages from '../game/Messages';
+import Grass from '../images/grass.jpg';
+import DogSmall from '../images/dog-s.jpg';
+import DogSmallFound from '../images/dog-s-found.jpg';
+import DogSmallGray from '../images/dog-s-gray.jpg';
+import DogMed from '../images/dog-m.jpg';
+import DogMedFound from '../images/dog-m-found.jpg';
+import DogMedGray from '../images/dog-m-gray.jpg';
+import DogLarge from '../images/dog-l.jpg';
+import DogLargeFound from '../images/dog-l-found.jpg';
+import DogLargeGray from '../images/dog-l-gray.jpg';
+import Treat from '../images/treat.jpg';
 import '../game/Battleship.css';
-import GitHubLogo from '../images/GitHub-Logo.png'
-import GitHubLogoBlack from '../images/GitHub-Logo-Black.png'
-import LinkedInLogo from '../images/LinkedIn-Logo.png'
-import LinkedInLogoBlack from '../images/LinkedIn-Logo-Black.png'
+import GitHubLogo from '../images/GitHub-Logo.png';
+import GitHubLogoBlack from '../images/GitHub-Logo-Black.png';
+import LinkedInLogo from '../images/LinkedIn-Logo.png';
+import LinkedInLogoBlack from '../images/LinkedIn-Logo-Black.png';
 
 class Battleship extends Component{
   constructor(props) {
@@ -64,34 +63,34 @@ class Battleship extends Component{
       this.scrollToContact.current.scrollIntoView({
         behavior: "smooth",
         block: "start"
-      })
+      });
     }
   }
   handleMouseOverLinkedIn = () => {
-    this.setState({linkedInSrc: LinkedInLogoBlack})
+    this.setState({linkedInSrc: LinkedInLogoBlack});
   }
   handleMouseOutLinkedIn = () => {
-    this.setState({linkedInSrc: LinkedInLogo})
+    this.setState({linkedInSrc: LinkedInLogo});
   }
   handleMouseOverGitHub = () => {
-    this.setState({gitHubSrc: GitHubLogoBlack})
+    this.setState({gitHubSrc: GitHubLogoBlack});
   }
   handleMouseOutGitHub = () => {
-    this.setState({gitHubSrc: GitHubLogo})
+    this.setState({gitHubSrc: GitHubLogo});
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    this.onHomePageHeaderToApp()
-    console.log("mainHeader? for Battleship:",this.props.mainHeader)
-    let squares = Array(100).fill().map(value=>Grass)
-    let { grid, shipIndexes, outterIndsOnly, twoH, twoV, threeH, threeV, fourH, fourV } = this.state
-    shipIndexes = []
-    outterIndsOnly = []
-    console.log("shipIndexes at start of Mount:", shipIndexes)
-    console.log("outterIndsOnly at start of Mount:", outterIndsOnly)
-    let noNoInds = []
-    let [twoHMount, twoVMount, threeHMount, threeVMount, fourHMount, fourVMount] = [1, 1, 1, 1, 1, 1]
+    this.onHomePageHeaderToApp();
+    // console.log("mainHeader? for Battleship:",this.props.mainHeader);
+    let squares = Array(100).fill().map(value=>Grass);
+    let { grid, shipIndexes, outterIndsOnly, twoH, twoV, threeH, threeV, fourH, fourV } = this.state;
+    shipIndexes = [];
+    outterIndsOnly = [];
+    // console.log("shipIndexes at start of Mount:", shipIndexes);
+    // console.log("outterIndsOnly at start of Mount:", outterIndsOnly);
+    let noNoInds = [];
+    let [twoHMount, twoVMount, threeHMount, threeVMount, fourHMount, fourVMount] = [1, 1, 1, 1, 1, 1];
 
     while (twoHMount > 0) {
       let random2H = Math.floor(Math.random() * 100)
@@ -512,4 +511,4 @@ class Battleship extends Component{
     )
   }
 }
-export default Battleship
+export default Battleship;

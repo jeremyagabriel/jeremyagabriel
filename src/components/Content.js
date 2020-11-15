@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-import HTMLLogo from '../images/HTML-Logo.png'
-import CSSLogo from '../images/CSS-Logo.png'
-import JSLogo from '../images/JS-Logo.png'
-import ReactLogo from '../images/React-Logo.png'
-import ReduxLogo from '../images/Redux-Logo.png'
-import RubyLogo from '../images/Ruby-Logo.png'
-import RubyOnRailsLogo from '../images/RubyOnRails-Logo.png'
-import SQLLogo from '../images/SQL-Logo.png'
-import PhotoshopLogo from '../images/Photoshop-Logo.png'
-import IllustratorLogo from '../images/Illustrator-Logo.png'
-import DigitalIllustrationsLogo from '../images/Digital-Illustrations-Logo.png'
-import GraphQLLogo from '../images/Graphql-Logo.png'
-import MongoDBLogo from '../images/MongoDB-Logo.png'
-import NodejsLogo from '../images/Nodejs-Logo.png'
-import PostgresqlLogo from '../images/Postgresql-Logo.png'
+import React from 'react';
+import HTMLLogo from '../images/HTML-Logo.png';
+import CSSLogo from '../images/CSS-Logo.png';
+import JSLogo from '../images/JS-Logo.png';
+import ReactLogo from '../images/React-Logo.png';
+import ReduxLogo from '../images/Redux-Logo.png';
+import RubyLogo from '../images/Ruby-Logo.png';
+import RubyOnRailsLogo from '../images/RubyOnRails-Logo.png';
+import SQLLogo from '../images/SQL-Logo.png';
+import PhotoshopLogo from '../images/Photoshop-Logo.png';
+import IllustratorLogo from '../images/Illustrator-Logo.png';
+import DigitalIllustrationsLogo from '../images/Digital-Illustrations-Logo.png';
+import GraphQLLogo from '../images/Graphql-Logo.png';
+import MongoDBLogo from '../images/MongoDB-Logo.png';
+import NodejsLogo from '../images/Nodejs-Logo.png';
+import PostgresqlLogo from '../images/Postgresql-Logo.png';
 import '../styles/Content.css';
 
-const Content = props => {
+const Content = () => {
   return(
     <>
       <div id="contentContainer">
         <div id="contentBody">
-          {/*<img id="jeremyComputer" alt="jeremyAtComputer" src={JeremyComputer} />*/}
           <div id="logoContainer">
             <div id="language-wrapper">
               <h3 className="contentTitles">Languages.</h3>

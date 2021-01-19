@@ -7,6 +7,7 @@ import HappyTrailsGIF from '../images/happy-trails-preview.gif';
 import AptFinder from '../images/micasa-preview-gif.gif';
 import HappyTrailsMobile from '../images/happy-trails-mobile-preview.jpg';
 import DogTransparent from '../images/dog-transparent.png';
+import Portfolio2Preview from '../images/portfolio-2-preview.jpg';
 import '../styles/Projects.css';
 
 const Projects = () => {
@@ -111,6 +112,25 @@ const Projects = () => {
               <span className="tag">Node.js</span>
               <span className="tag">Express</span>
               <span className="tag last">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div className="project">
+        {/* <a href="/" className="projectLink" target="_blank" rel="noopener noreferrer"> */}
+          <img className="projectImage" alt="portfolio-project-repo" src={Portfolio2Preview} />
+        {/* </a> */}
+          <div className="projectCaptionContainer">
+            {/* <a className="projectTitleLink" href="/" target="_blank" rel="noopener noreferrer"> */}
+              <h6 className="projectTitle">Portfolio 2.0</h6>
+              {/* </a> */}
+            <p className="projectCaption">Second iteration of my portfolio coming soon. Built on React with Gatsby and utilizes the CSS framework Theme UI for a custom design, as well as custom animations through the Framer Motion API.
+            {/* <a className="repo-link" href="/" target="_blank" rel="noopener noreferrer">View repo</a> */}
+            </p>
+            <div className="tags-wrapper">
+              <span className="tag first">React</span>
+              <span className="tag">Gatsby</span>
+              <span className="tag">Theme UI</span>
+              <span className="tag last">Framer Motion</span>
             </div>
           </div>
         </div>
